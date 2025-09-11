@@ -47,15 +47,15 @@ redirect_from:
 
 ## Presentations
 ### Talks
-- **2025 SSC Annual Meeting in Saskatoon**
+- **SSC Annual Meeting in Saskatoon**, 2025
 
   Presented *Markov Processes for Enhanced Deepfake Generation and Detection* in the Probability session 
-- **2025 Third Joint SIAM/CAIMS Annual Meeting**
+- **Third Joint SIAM/CAIMS Annual Meeting**, 2025
 
    Presented *Markov Processes for Enhanced Deepfake Generation and Detection* in the Machine Learning and Stochastic Processes session 
 
 ### Posters
-- **Canadian Statistics Student Conference** (2025)
+- **Thirteenth Annual Canadian Statistics Student Conference**, 2025
 
   Presented *Comparing Exact and Approximate Inference for Spatial Autocorrelation Tests: A Power Analysis
 
@@ -88,7 +88,7 @@ Statistics Student Conference.
 ---
 
 ## Service
-- **Session chair, 2025 Third Joint SIAM/CAIMS Annual Meeting**
+- **Session chair, Third Joint SIAM/CAIMS Annual Meeting**, 2025
   
 Chaired the "Machine Learning and Stochastic Processes" session
 ---
