@@ -68,13 +68,12 @@ redirect_from:
 - **NSERC USRA** (x2), 2023 & 2024
   
   Awarded by the University of Alberta to research Markov process methods for deepfake generation and detection.
-- **Jack Zwaigenbaum Scholarship**, 202
-- 
-Awarded by University College (University of Toronto) for academic excellence in my first year
+- **Jack Zwaigenbaum Scholarship**, 2025
+  Awarded by University College (University of Toronto) for academic excellence in my first year
 of undergraduate studies.
 - **Dean’s List Scholar (x4)**, 2022–2025
   
-Awarded by the Faculty of Arts and Science (University of Toronto) for maintaining academic
+  Awarded by the Faculty of Arts and Science (University of Toronto) for maintaining academic
 excellence every year of my undergraduate degree.
 
 ---
@@ -89,8 +88,8 @@ Statistics Student Conference.
 
 ## Service
 - **Session chair, Third Joint SIAM/CAIMS Annual Meeting**, 2025
-  
-Chaired the "Machine Learning and Stochastic Processes" session
+
+  Chaired the "Machine Learning and Stochastic Processes" session
 ---
 
 ## Other
