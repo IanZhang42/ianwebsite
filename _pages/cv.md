@@ -11,12 +11,23 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* MSc in Statistics, University of Toronto, 2026 (expected)
+* Honours BSc in Statistics & Mathematics, University of Toronto, 2025
+
+======
+## Publications and Preprints
+
+†: Corresponding Author  *: Equal contribution  
+
+### Preprints
+1. Michael A. Kouritzin, **Ian Zhang**†, Jyoti Bhadana, Seoyeon Park  
+   *Markov Processes for Enhanced Deepfake Generation and Detection* (2024)  
+   [https://arxiv.org/abs/2411.07993](https://arxiv.org/abs/2411.07993)
+
 
 Work experience
 ======
+
 * Spring 2024: Academic Pages Collaborator
   * GitHub University
   * Duties includes: Updates and improvements to template
@@ -41,11 +52,7 @@ Skills
   * Sub-skill 2.3
 * Skill 3
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
   
 Talks
 ======
