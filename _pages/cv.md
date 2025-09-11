@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+## Education
 ======
 * MSc in Statistics, University of Toronto, 2026 (expected)
 * Honours BSc in Statistics & Mathematics, University of Toronto, 2025
