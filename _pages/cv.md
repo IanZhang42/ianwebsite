@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -10,62 +10,68 @@ redirect_from:
 {% include base_path %}
 
 ## Education
-======
-* MSc in Statistics, University of Toronto, 2026 (expected)
-* Honours BSc in Statistics & Mathematics, University of Toronto, 2025
+- **MSc in Statistics**, University of Toronto, 2026  
+- **Honours BSc in Statistics/Mathematics**, University of Toronto, 2025  
+  - Advisor: Jun Young Park  
+  - Graduated with high distinction  
+  - Relevant coursework: Machine learning, stochastic processes, statistical inference, multivariate methods, real analysis, linear algebra, ODE/PDE, programming:contentReference[oaicite:0]{index=0}  
 
-======
+---
+
 ## Publications and Preprints
-
-†: Corresponding Author  *: Equal contribution  
+†: Corresponding Author; *: Equal contribution  
 
 ### Preprints
-1. Michael A. Kouritzin, **Ian Zhang**†, Jyoti Bhadana, Seoyeon Park  
-   *Markov Processes for Enhanced Deepfake Generation and Detection* (2024)  
-   [https://arxiv.org/abs/2411.07993](https://arxiv.org/abs/2411.07993)
+1. Michael A. Kouritzin, **Ian Zhang**†, Jyoti Bhadana, Seoyeon Park (2024).  
+   *Markov Processes for Enhanced Deepfake Generation and Detection*  
+   [arXiv:2411.07993](https://arxiv.org/abs/2411.07993) :contentReference[oaicite:1]{index=1}  
 
+---
 
-Work experience
-======
+## Experience
+- **Summer Research Trainee**, McGill University (2025)  
+  Supervisor: Jianguo (Jeff) Xia:contentReference[oaicite:2]{index=2}
 
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- **Research Assistant**, University of Alberta (2023–2024)  
+  Supervisor: Mike Kouritzin:contentReference[oaicite:3]{index=3}
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+---
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Teaching
+- **MAT137: Calculus with Proofs** — TA, Fall 2025 & Winter 2026  
+- **STA302: Methods of Data Analysis I** — TA, Fall 2025  
+- **STA437: Methods of Multivariate Data** — TA, Winter 2026:contentReference[oaicite:4]{index=4}
 
+---
 
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Presentations
+**Talks**
+- *SSC Annual Meeting* (2025, Saskatoon) — Probability session  
+- *SIAM/CAIMS Annual Meeting* (2025) — Machine Learning & Stochastic Processes session  
+
+**Posters**
+- *Canadian Statistics Student Conference* (2025) — Poster on spatial autocorrelation tests:contentReference[oaicite:5]{index=5}  
+
+---
+
+## Honours and Awards
+- Anna & Alex Beverly Memorial Fellowship, 2025  
+- NSERC USRA (x2), 2023 & 2024  
+- Jack Zwaigenbaum Scholarship, 2022  
+- Dean’s List Scholar (x4), 2022–2025:contentReference[oaicite:6]{index=6}  
+
+---
+
+## Grants
+- CSSC Travel Grant, 2025:contentReference[oaicite:7]{index=7}
+
+---
+
+## Service
+- **Session chair**, SIAM/CAIMS 2025 — “Machine Learning and Stochastic Processes”:contentReference[oaicite:8]{index=8}
+
+---
+
+## Other
+- Languages: English (native), Mandarin (native), Japanese (intermediate)  
+- Memberships: Statistical Society of Canada:contentReference[oaicite:9]{index=9}
