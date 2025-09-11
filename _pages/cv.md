@@ -8,6 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
+[My downloadable CV can be found here](/files/ian_CV.pdf)
+
 
 ## Education
 - **MSc in Statistics**, University of Toronto, 2026  
