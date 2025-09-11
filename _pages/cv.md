@@ -48,25 +48,32 @@ redirect_from:
 ## Presentations
 ### Talks
 - **2025 SSC Annual Meeting in Saskatoon**
+
   Presented *Markov Processes for Enhanced Deepfake Generation and Detection* in the Probability session 
 - **2025 Third Joint SIAM/CAIMS Annual Meeting**
+
    Presented *Markov Processes for Enhanced Deepfake Generation and Detection* in the Machine Learning and Stochastic Processes session 
 
 ### Posters
-- **Canadian Statistics Student Conferenc*e* (2025)
+- **Canadian Statistics Student Conference** (2025)
+
   Presented *Comparing Exact and Approximate Inference for Spatial Autocorrelation Tests: A Power Analysis
 
 ---
 
 ## Honours and Awards
 - **Anna & Alex Beverly Memorial Fellowship**, 2025
+  
   Awarded by University College (University of Toronto) for general proficiency during my undergraduate degree.
 - **NSERC USRA** (x2), 2023 & 2024
+  
   Awarded by the University of Alberta to research Markov process methods for deepfake generation and detection.
-- **Jack Zwaigenbaum Scholarship**, 2022
+- **Jack Zwaigenbaum Scholarship**, 202
+- 
 Awarded by University College (University of Toronto) for academic excellence in my first year
 of undergraduate studies.
 - **Dean’s List Scholar (x4)**, 2022–2025
+  
 Awarded by the Faculty of Arts and Science (University of Toronto) for maintaining academic
 excellence every year of my undergraduate degree.
 
@@ -74,6 +81,7 @@ excellence every year of my undergraduate degree.
 
 ## Grants
 - **CSSC Travel Grant**, 2025
+  
 Awarded to full-time Canadian students presenting a poster or giving a talk at the Canadian
 Statistics Student Conference.
 
@@ -81,6 +89,7 @@ Statistics Student Conference.
 
 ## Service
 - **Session chair, 2025 Third Joint SIAM/CAIMS Annual Meeting**
+  
 Chaired the "Machine Learning and Stochastic Processes" session
 ---
 
