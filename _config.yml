@@ -23,7 +23,7 @@ repository               : "IanZhang42/ianwebsite"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "IMG_0061.jpeg"
   name             : "Ian Zhang" 
   bio              : "MSc Student in Statistics"
   location         : "Toronto, ON"
