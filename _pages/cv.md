@@ -23,7 +23,7 @@ redirect_from:
 ## Publications and Preprints
 †: Corresponding Author; *: Equal contribution  
 
-### Preprints
+### Under Review
 1. Michael A. Kouritzin, **Ian Zhang**†, Jyoti Bhadana, Seoyeon Park (2024).  
    *Markov Processes for Enhanced Deepfake Generation and Detection*  
    [arXiv:2411.07993](https://arxiv.org/abs/2411.07993)
@@ -31,6 +31,9 @@ redirect_from:
 ---
 
 ## Experience
+- **Graduate Research Assistant**, Baycrest Institute (2025 - Present)
+  Supervisor: Malcolm Binns
+
 - **Summer Research Trainee**, McGill University (2025)  
   Supervisor: Jianguo (Jeff) Xia
 
@@ -44,6 +47,14 @@ redirect_from:
 - **MAT137: Calculus with Proofs** — TA, Fall 2025 & Winter 2026  
 - **STA302: Methods of Data Analysis I** — TA, Fall 2025  
 - **STA437: Methods of Multivariate Data** — TA, Winter 2026
+
+---
+
+## Projects
+1. Pomodoro Clock
+  *With [Arnav Nambiar](https://www.linkedin.com/in/arnav-nambiar-3434861b5/)*
+  - Developed a clock following the Pomodoro technique that implements deep-learning, NLP, and generative AI to provide adaptive productive insights, integrated real-time tracking, and task categorization
+  - Designed to help individuals keep on track and to minimize the amount of work required to plan tasks and budget time [Github](https://github.com/ovoarnav/pomodoro)
 
 ---
 
