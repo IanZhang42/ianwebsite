@@ -51,7 +51,7 @@ redirect_from:
 ---
 
 ## Projects
-1. Pomodoro Clock
+**Pomodoro Clock**
   *With [Arnav Nambiar](https://www.linkedin.com/in/arnav-nambiar-3434861b5/)*
   - Developed a clock following the Pomodoro technique that implements deep-learning, NLP, and generative AI to provide adaptive productive insights, integrated real-time tracking, and task categorization
   - Designed to help individuals keep on track and to minimize the amount of work required to plan tasks and budget time [Github](https://github.com/ovoarnav/pomodoro)
