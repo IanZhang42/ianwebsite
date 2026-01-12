@@ -6,6 +6,16 @@ author_profile: true
 ---
 Here is a list of the courses I have taken during my time at UofT:
 
+### Masters
+- [STA2101: Applied Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2111: Graduate Probability I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2162: Statistical Inference I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2202: Applied Statistics II](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2112: Mathemarical Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2212: Mathematical Statistics II](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2475: Survival Analysis](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA4000: Supervised Reading Project I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions) (supervisor: [Dr. Nancy Reid, OC, FRS, FRSC])(https://en.wikipedia.org/wiki/Nancy_Reid)
+
 ### First Year Undergraduate
 - [MAT133Y1: Calculus and Linear Algebra for Commerce](https://artsci.calendar.utoronto.ca/course/mat133y1)
 - [ECO101H1: Principles of Microeconomics](https://artsci.calendar.utoronto.ca/course/eco101h1)
@@ -49,7 +59,6 @@ Here is a list of the courses I have taken during my time at UofT:
 - [MAT301H1: Groups and Symmetries](https://artsci.calendar.utoronto.ca/course/mat301h1)
 - [MAT334H1: Complex Variables](https://artsci.calendar.utoronto.ca/course/mat334h1)
 - [STA314H1: Statistical Methods for Machine Learning I](https://artsci.calendar.utoronto.ca/course/sta314h1)
-- [STA410H1: Statistical Computation](https://artsci.calendar.utoronto.ca/course/sta410h1)
 - [STA414H1: Statistical Methods for Machine Learning II](https://artsci.calendar.utoronto.ca/course/sta414h1)
 - [STA442H1: Methods of Applied Statistics](https://artsci.calendar.utoronto.ca/course/sta442h1)
 - [STA452H1: Mathematical Statistics I](https://artsci.calendar.utoronto.ca/course/stsa452h1)
@@ -57,10 +66,4 @@ Here is a list of the courses I have taken during my time at UofT:
 - [STA492H1: Seminar in Statistical Sciences](https://artsci.calendar.utoronto.ca/course/sta492h1)
 - [STA497H1Y: Readings in Statistics](https://artsci.calendar.utoronto.ca/course/sta497h1) (advisor: [Dr. Jun Young Park](https://junjypark.github.io/))
 
-### Masters (tentative list)
-- [STA2101: Applied Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
-- [STA2111: Graduate Probability I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
-- [STA2112: Mathematical Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
-- [STA2311: Advanced Computational Methods for Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
-- [STA4000: Supervised Reading Project I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions) (supervisor: [Dr. Nancy Reid, OC, FRS, FRSC](https://en.wikipedia.org/wiki/Nancy_Reid)
 
