@@ -14,7 +14,7 @@ Here is a list of the courses I have taken during my time at UofT:
 - [STA2112: Mathemarical Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA2212: Mathematical Statistics II](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA2475: Survival Analysis](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
-- [STA4000: Supervised Reading Project I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions) (supervisor: [Dr. Nancy Reid, OC, FRS, FRSC])(https://en.wikipedia.org/wiki/Nancy_Reid)
+- [STA4000: Supervised Reading Project I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions) (supervisor: [Dr. Nancy Reid, OC, FRS, FRSC](https://en.wikipedia.org/wiki/Nancy_Reid))
 
 ### First Year Undergraduate
 - [MAT133Y1: Calculus and Linear Algebra for Commerce](https://artsci.calendar.utoronto.ca/course/mat133y1)
