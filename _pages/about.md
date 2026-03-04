@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Ian Zhang, I'm a graduate student at the University of Toronto, currently working towards my masters in statistics, which I expect to obtain in June 2026. I recently received my Honours BSc in statistics and mathematics from UofT, from which I graduated with high distinction. In Fall 2026, I will starting my PhD in statistics; I have yet to decide where to pursue this degree.
+My name is Ian Zhang, I'm a graduate student at the University of Toronto, currently working towards my masters in statistics, which I expect to obtain in June 2026. I recently received my Honours BSc in statistics and mathematics from UofT, from which I graduated with high distinction. In Fall 2026, I will starting my PhD in statistics at UofT, under the supervision of Professors [Joshua Speagle](https://joshspeagle.com/) and [Thibault Randrianarisoa](https://thibaultrandrianarisoa.netlify.app/).
 
 My research interests lie mainly in asymptotic statistical theory and applications, Bayesian nonparametrics, and high-dimensional statistics. Some topics I've worked on include:
 - Asymptotic statistical theory and stochastic convergence
