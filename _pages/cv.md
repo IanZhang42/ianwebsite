@@ -42,12 +42,15 @@ redirect_from:
 
 ## Research Experience
 - **Graduate Research Assistant**, Baycrest Institute (2025 - Present)
+  
   Supervisor: Malcolm Binns
 
-- **Summer Research Trainee**, McGill University (2025)  
+- **Summer Research Trainee**, McGill University (2025)
+  
   Supervisor: Jianguo (Jeff) Xia
 
-- **Research Assistant**, University of Alberta (2023–2024)  
+- **Research Assistant**, University of Alberta (2023–2024)
+  
   Supervisor: Mike Kouritzin
 
 ---
