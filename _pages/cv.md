@@ -12,7 +12,8 @@ redirect_from:
 
 
 ## Education
-- **PhD in Statistics**, University of Toronto, Sep 2026 - 
+- **PhD in Statistics**, University of Toronto, Sep 2026 -
+  - Advisors: Joshua Speagle and Thibault Randrianarisoa
 - **MSc in Statistics**, University of Toronto, Sep 2025 - June 2026
   - Advisor: Nancy Reid
 - **Honours BSc in Statistics/Mathematics**, University of Toronto, Sep 2021 - Jun 2025  
