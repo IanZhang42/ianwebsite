@@ -32,16 +32,13 @@ redirect_from:
 
 ### In Progress
 1. Aditya Khan, **Ian Zhang** (2025).
-   
   *Parametric Hotspot Analysis with the Getis-Ord Statistic*
   
 2. Hanlong Chen*, **Ian Zhang**\*, . . ., Howard Chertkow, . . ., Malcolm Binns (2026).
+   *Reproducible Dementia Subtyping through Cross-Validated Joint Hyperparameter Optimization of PCA dimensionality and k in Unsupervised Clustering*
    
-   Reproducible Dementia Subtyping through Cross-Validated Joint Hyperparameter Optimization of PCA dimensionality and k in Unsupervised Clustering
-   
-3. **Ian Zhang**†, Thibault Randrianarisoa
-   
-   Likelihood tempering to mitigate prior dominance in variational posteriors for Bayesian neural networks (2026).
+3. **Ian Zhang**†, Thibault Randrianarisoa (2026).
+   *Likelihood tempering to mitigate prior dominance in variational posteriors for Bayesian neural networks*
 ---
 
 ## Research Experience
