@@ -32,13 +32,17 @@ redirect_from:
 
 ### In Progress
 1. Aditya Khan, **Ian Zhang** (2025).
-  *Parametric Hotspot Analysis with the Getis-Ord Statistic*
+
+   *Parametric Hotspot Analysis with the Getis-Ord Statistic*
   
 2. Hanlong Chen*, **Ian Zhang**\*, . . ., Howard Chertkow, . . ., Malcolm Binns (2026).
+   
    *Reproducible Dementia Subtyping through Cross-Validated Joint Hyperparameter Optimization of PCA dimensionality and k in Unsupervised Clustering*
    
 3. **Ian Zhang**†, Thibault Randrianarisoa (2026).
+
    *Likelihood tempering to mitigate prior dominance in variational posteriors for Bayesian neural networks*
+   
 ---
 
 ## Research Experience
@@ -73,29 +77,37 @@ redirect_from:
 ### Talks
 
 - **2026 Joint Statistical Meetings**, 2026
+  
   Will be presenting *RAMA: Redundancy-Aware Model Assessment for PCA-Based Clinical Subtype Discovery* 
 - **SSC Annual Meeting in Hamilton**, 2026
+  
   Will be presenting *Likelihood tempering to mitigate prior dominance in variational inference for Bayesian neural networks* 
 - **SSC Annual Meeting in Saskatoon**, 2025
+  
   Presented *Markov Processes for Enhanced Deepfake Generation and Detection* in the Probability session 
 - **Third Joint SIAM/CAIMS Annual Meeting**, 2025
+  
    Presented *Markov Processes for Enhanced Deepfake Generation and Detection* in the Machine Learning and Stochastic Processes session 
 
 ### Posters
 - **Thirteenth Annual Canadian Statistics Student Conference**, 2025
+  
   Presented *Comparing Exact and Approximate Inference for Spatial Autocorrelation Tests: A Power Analysis*
 
 ---
 
 ## Honours and Awards
 - **Anna & Alex Beverly Memorial Fellowship**, 2025
+  
   Awarded by University College (University of Toronto) for general proficiency during my undergraduate degree.
 - **NSERC USRA** (x2), 2023 & 2024
+  
   Awarded by the University of Alberta to research Markov process methods for deepfake generation and detection.
 - **Jack Zwaigenbaum Scholarship**, 2025
-  Awarded by University College (University of Toronto) for academic excellence in my first year
-of undergraduate studies.
+  
+  Awarded by University College (University of Toronto) for academic excellence in my first year of undergraduate studies.
 - **Dean’s List Scholar (x4)**, 2022–2025
+  
   Awarded by the Faculty of Arts and Science (University of Toronto) for maintaining academic excellence every year of my undergraduate degree.
 
 ---
@@ -103,8 +115,7 @@ of undergraduate studies.
 ## Grants
 - **CSSC Travel Grant**, 2025
   
-  Awarded to full-time Canadian students presenting a poster or giving a talk at the Canadian
-Statistics Student Conference.
+  Awarded to full-time Canadian students presenting a poster or giving a talk at the Canadian Statistics Student Conference.
 
 ---
 
