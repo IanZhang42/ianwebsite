@@ -12,11 +12,12 @@ redirect_from:
 
 
 ## Education
-- **MSc in Statistics**, University of Toronto, 2026  
-- **Honours BSc in Statistics/Mathematics**, University of Toronto, 2025  
+- **PhD in Statistics**, University of Toronto, Sep 2026 - 
+- **MSc in Statistics**, University of Toronto, Sep 2025 - June 2026
+  - Advisor: Nancy Reid
+- **Honours BSc in Statistics/Mathematics**, University of Toronto, Sep 2021 - Jun 2025  
   - Advisor: Jun Young Park  
-  - Graduated with high distinction  
-  - Relevant coursework: Machine learning, stochastic processes, statistical inference, multivariate methods, real analysis, linear algebra, ODE/PDE, programming 
+  - Graduated with high distinction 
 
 ---
 
@@ -28,9 +29,18 @@ redirect_from:
    *Markov Processes for Enhanced Deepfake Generation and Detection*  
    [arXiv:2411.07993](https://arxiv.org/abs/2411.07993)
 
+### In Progress
+1. Aditya Khan, **Ian Zhang** (2025).
+  *Parametric Hotspot Analysis with the Getis-Ord Statistic*
+  
+2. Hanlong Chen*, **Ian Zhang**\*, . . ., Howard Chertkow, . . ., Malcolm Binns (2026).
+   Reproducible Dementia Subtyping through Cross-Validated Joint Hyperparameter Optimization of PCA dimensionality and k in Unsupervised Clustering
+   
+3. **Ian Zhang**†, Thibault Randrianarisoa
+   Likelihood tempering to mitigate prior dominance in variational posteriors for Bayesian neural networks (2026).
 ---
 
-## Experience
+## Research Experience
 - **Graduate Research Assistant**, Baycrest Institute (2025 - Present)
   Supervisor: Malcolm Binns
 
@@ -60,6 +70,13 @@ redirect_from:
 
 ## Presentations
 ### Talks
+
+- **2026 Joint Statistical Meetings**, 2026
+
+  Will be presenting *RAMA: Redundancy-Aware Model Assessment for PCA-Based Clinical Subtype Discovery* 
+- **SSC Annual Meeting in Hamilton**, 2026
+
+  Will be presenting *Likelihood tempering to mitigate prior dominance in variational inference for Bayesian neural networks* 
 - **SSC Annual Meeting in Saskatoon**, 2025
 
   Presented *Markov Processes for Enhanced Deepfake Generation and Detection* in the Probability session 
