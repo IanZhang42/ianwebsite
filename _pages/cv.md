@@ -114,14 +114,12 @@ redirect_from:
 
 ## Grants
 - **CSSC Travel Grant**, 2025
-  
   Awarded to full-time Canadian students presenting a poster or giving a talk at the Canadian Statistics Student Conference.
 
 ---
 
 ## Service
 - **Session chair, Third Joint SIAM/CAIMS Annual Meeting**, 2025
-  
   Chaired the "Machine Learning and Stochastic Processes" session
 ---
 
