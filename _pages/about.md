@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to my website!"
+title: "Ian Zhang"
 author_profile: true
 redirect_from: 
   - /about/
