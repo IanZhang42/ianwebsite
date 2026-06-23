@@ -1,9 +1,8 @@
 ---
-layout: archive
+layout: single
 title: "Curriculum Vitae"
 permalink: /cv/
-author_profile: false
-classes: wide
+author_profile: true
 redirect_from:
   - /resume
 ---

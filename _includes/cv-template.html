@@ -1,52 +1,15 @@
 {% include base_path %}
 {% assign cv = site.data.cv %}
 
-<style>
-  /* Page-scoped (this include only loads on /cv/): the theme floats .archive
-     and reserves a sidebar gutter, which pushes content off-center. Make it
-     full width so .cv-container can center on the full page. */
-  #main .archive {
-    width: 100%;
-    max-width: 100%;
-    float: none;
-    margin: 0 auto;
-    padding-right: 0;
-  }
-  #main .archive > .page__title {
-    text-align: center;
-  }
-</style>
-
 <div class="cv-container">
 
-  <!-- ============ HEADER ============ -->
-  <div class="cv-section cv-header">
-    {% if cv.basics.avatar %}
-    <div class="cv-avatar">
-      <img src="{{ cv.basics.avatar | prepend: base_path }}" alt="{{ cv.basics.name }}">
-    </div>
-    {% endif %}
-
-    <div class="cv-header-info">
-      <h1>{{ cv.basics.name }}</h1>
-      {% if cv.basics.label %}<p class="cv-label">{{ cv.basics.label }}</p>{% endif %}
-
-      {% if cv.basics.profiles.size > 0 %}
-      <div class="cv-contact">
-        {% for profile in cv.basics.profiles %}
-        <a class="cv-contact-item" href="{{ profile.url }}"{% unless profile.url contains "mailto:" %} target="_blank" rel="noopener"{% endunless %} title="{{ profile.label }}">
-          <i class="{{ profile.icon }}" aria-hidden="true"></i><span>{{ profile.text | default: profile.label }}</span>
-        </a>
-        {% endfor %}
-      </div>
-      {% endif %}
-
-      <div class="cv-header-meta">
-        {% if cv.basics.pdf %}<a class="btn btn--primary cv-pdf-btn" href="{{ cv.basics.pdf | prepend: base_path }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download PDF</a>{% endif %}
-        {% if cv.basics.lastUpdated %}<span class="cv-updated">Last updated: {{ cv.basics.lastUpdated }}</span>{% endif %}
-      </div>
-    </div>
+  <!-- ============ TOP META ============ -->
+  {% if cv.basics.pdf or cv.basics.lastUpdated %}
+  <div class="cv-meta">
+    {% if cv.basics.pdf %}<a class="btn btn--primary cv-pdf-btn" href="{{ cv.basics.pdf | prepend: base_path }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download PDF</a>{% endif %}
+    {% if cv.basics.lastUpdated %}<span class="cv-updated">Last updated: {{ cv.basics.lastUpdated }}</span>{% endif %}
   </div>
+  {% endif %}
 
   <!-- ============ EDUCATION ============ -->
   {% if cv.education.size > 0 %}
