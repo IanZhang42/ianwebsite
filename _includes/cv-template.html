@@ -1,6 +1,22 @@
 {% include base_path %}
 {% assign cv = site.data.cv %}
 
+<style>
+  /* Page-scoped (this include only loads on /cv/): the theme floats .archive
+     and reserves a sidebar gutter, which pushes content off-center. Make it
+     full width so .cv-container can center on the full page. */
+  #main .archive {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+  #main .archive > .page__title {
+    text-align: center;
+  }
+</style>
+
 <div class="cv-container">
 
   <!-- ============ HEADER ============ -->
