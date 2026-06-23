@@ -160,7 +160,7 @@ analytics:
 include:
   - .htaccess
   - _pages
-  - files
+  - CV
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
