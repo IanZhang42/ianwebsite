@@ -19,7 +19,20 @@
 }
 
 .cv-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   font-size: 0.85rem;
+  color: #fff !important;
+  background-color: var(--global-link-color);
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    color: #fff !important;
+    background-color: var(--global-link-color-hover);
+    text-decoration: none;
+  }
 }
 
 .cv-updated {
