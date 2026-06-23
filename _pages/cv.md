@@ -8,11 +8,6 @@ redirect_from:
   - /resume
 ---
 
----
-layout: default
-permalink: /cv/
----
-
 <style>
 .cv-container {
   max-width: 760px;
