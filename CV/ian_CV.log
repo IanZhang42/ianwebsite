@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.21)  22 JUN 2026 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.21)  23 JUN 2026 13:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**/Users/bionicdonkey42/Desktop/ianwebsite/files/ian_CV
-(/Users/bionicdonkey42/Desktop/ianwebsite/files/ian_CV.tex
+**/Users/bionicdonkey42/Desktop/ianwebsite/CV/ian_CV
+(/Users/bionicdonkey42/Desktop/ianwebsite/CV/ian_CV.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -1205,12 +1205,12 @@ Package rerunfilecheck Info: File `ian_CV.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  36432 strings out of 473579
- 745320 string characters out of 5728234
+ 745311 string characters out of 5728234
  1312457 words of memory out of 5000000
  58590 multiletter control sequences out of 15000+600000
  622697 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,5n,107p,519b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,5n,107p,516b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
 Output written on ian_CV.pdf (3 pages, 184205 bytes).
 PDF statistics:
