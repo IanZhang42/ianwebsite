@@ -38,23 +38,26 @@ My downloadable CV can be found <a href="/CV/ian_CV.pdf" target="_blank" rel="no
 
 ### Published
 
-1. Michael A. Kouritzin, **Ian Zhang**<sup>†</sup>, Jyoti Bhadana, Seoyeon Park. Markov processes for enhanced deepfake generation and detection[J]. *AIMS Mathematics*, 2026, 11(4): 11731–11759. doi: 10.3934/math.2026483
+Michael A. Kouritzin, **Ian Zhang**<sup>†</sup>, Jyoti Bhadana, Seoyeon Park. Markov processes for enhanced deepfake generation and detection[J]. *AIMS Mathematics*, 2026, 11(4): 11731–11759. doi: 10.3934/math.2026483
+
+### Under Review
+
+Aditya Khan, **Ian Zhang** (2026).<br>
+*Parametric Hotspot Analysis with the Getis-Ord Statistic.*
+
 
 ### In Progress
 
-1. Aditya Khan, **Ian Zhang** (2026).<br>
-   *Parametric Hotspot Analysis with the Getis-Ord Statistic.*
-
-2. **Ian Zhang**<sup>\*,†</sup>, Hanlong Chen<sup>\*</sup>, . . ., Howard Chertkow, . . ., Malcolm Binns (2026).<br>
+**Ian Zhang**<sup>\*,†</sup>, Hanlong Chen<sup>\*</sup>, . . ., Howard Chertkow, . . ., Malcolm Binns (2026).<br>
    *Redundancy-Aware Model Assessment for Component and Cluster Selection in Clinical Subtype Discovery.*
 
-3. Hanlong Chen<sup>\*</sup>, **Ian Zhang**<sup>\*</sup>, . . . , Malcolm Binns (2026).<br>
+Hanlong Chen<sup>\*</sup>, **Ian Zhang**<sup>\*</sup>, . . . , Malcolm Binns (2026).<br>
    *Continuous Cognitive Heterogeneity in Dementia: A Severity Factor and an Age-Related Amnestic Axis Without Reproducible Subtypes.*
 
-4. **Ian Zhang**<sup>†</sup>, Finn Tran, Meredith Franklin (2026).<br>
+**Ian Zhang**<sup>†</sup>, Finn Tran, Meredith Franklin (2026).<br>
    *Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models.*
 
-5. **Ian Zhang**<sup>†</sup>, Thibault Randrianarisoa (2026).<br>
+**Ian Zhang**<sup>†</sup>, Thibault Randrianarisoa (2026).<br>
    *Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks.*
 
 ## Research Experience
