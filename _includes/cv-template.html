@@ -50,6 +50,21 @@
     </ol>
     {% endif %}
 
+    {% if cv.publications.underReview.size > 0 %}
+    <h3>Under Review</h3>
+    <ol class="cv-pub-list">
+      {% for pub in cv.publications.underReview %}
+      <li class="cv-pub">
+        <div class="cv-item-header">
+          <div class="cv-pub-authors">{{ pub.authors }}</div>
+          {% if pub.date %}<div class="cv-item-date">{{ pub.date }}</div>{% endif %}
+        </div>
+        <div class="cv-pub-title"><em>{{ pub.title }}</em></div>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+
     {% if cv.publications.inProgress.size > 0 %}
     <h3>In Progress</h3>
     <ol class="cv-pub-list">

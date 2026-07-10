@@ -74,11 +74,18 @@
         "venue": "<em>AIMS Mathematics</em>, 2026, 11(4): 11731–11759. doi: <a href=\"https://doi.org/10.3934/math.2026483\">10.3934/math.2026483</a>"
       }
     ],
-    "inProgress": [
+    "underReview": [
       {
         "authors": "Aditya Khan, <strong>Ian Zhang</strong>",
         "date": "2026",
         "title": "Parametric Hotspot Analysis with the Getis-Ord Statistic."
+      }
+    ],
+    "inProgress": [
+      {
+        "authors": "<strong>Ian Zhang</strong><sup>†</sup>, Thibault Randrianarisoa",
+        "date": "2026",
+        "title": "Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks."
       },
       {
         "authors": "<strong>Ian Zhang</strong><sup>*,†</sup>, Hanlong Chen<sup>*</sup>, …, Howard Chertkow, …, Malcolm Binns",
@@ -94,11 +101,6 @@
         "authors": "<strong>Ian Zhang</strong><sup>†</sup>, Finn Tran, Meredith Franklin",
         "date": "2026",
         "title": "Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models."
-      },
-      {
-        "authors": "<strong>Ian Zhang</strong><sup>†</sup>, Thibault Randrianarisoa",
-        "date": "2026",
-        "title": "Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks."
       }
     ]
   },

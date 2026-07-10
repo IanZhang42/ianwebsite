@@ -48,6 +48,9 @@ Aditya Khan, **Ian Zhang** (2026).<br>
 
 ### In Progress
 
+**Ian Zhang**<sup>†</sup>, Thibault Randrianarisoa (2026).<br>
+   *Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks.*
+
 **Ian Zhang**<sup>\*,†</sup>, Hanlong Chen<sup>\*</sup>, . . ., Howard Chertkow, . . ., Malcolm Binns (2026).<br>
    *Redundancy-Aware Model Assessment for Component and Cluster Selection in Clinical Subtype Discovery.*
 
@@ -56,9 +59,6 @@ Hanlong Chen<sup>\*</sup>, **Ian Zhang**<sup>\*</sup>, . . . , Malcolm Binns (20
 
 **Ian Zhang**<sup>†</sup>, Finn Tran, Meredith Franklin (2026).<br>
    *Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models.*
-
-**Ian Zhang**<sup>†</sup>, Thibault Randrianarisoa (2026).<br>
-   *Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks.*
 
 ## Research Experience
 
