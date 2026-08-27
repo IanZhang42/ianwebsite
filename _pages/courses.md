@@ -22,6 +22,13 @@ Here is a list of coursework I completed during my undergraduate and master's st
 
 ## Coursework
 
+### PhD
+- [STA2016: Spatial Statistics](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2311: Computational Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2312: Applied Statistics II](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA3000: Theory of Statistics](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA4001: Reading Course in Statistics](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions) (supervisor: [Dr. Ricardo Baptista](https://www.ricardobaptista.com/))
+
 ### Masters
 - [STA2101: Applied Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA2111: Graduate Probability I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
