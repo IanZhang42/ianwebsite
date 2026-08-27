@@ -1,17 +1,18 @@
 ---
-title: "MAT137: Calculus With Proofs"
+title: "MAT149: Calculus II with Proofs"
 collection: teaching
 type: "Teaching Assistant"
-permalink: /teaching/mat137fall2025winter2026
+permalink: /teaching/mat149winter2027
 venue: "University of Toronto"
-date: 2025-09-01
+date: 2027-01-01
 location: "Toronto, CAN"
 ---
 
-MAT137 is a full-year first-year calculus course that introduces students to proofwriting and more rigorous concepts in calculus.
+MAT149 continues the first-year proof-based calculus sequence and is analogous to the second half of the previously named MAT137, covering integral calculus. 
 
 **Responsibilities**
 - Holding weekly tutorials and office hours
 - Marking problem sets and exams
 - Invigilating term tests and final exam
 - Answering Piazza posts
+

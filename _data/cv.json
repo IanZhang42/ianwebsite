@@ -1,9 +1,9 @@
 {
   "basics": {
     "name": "Ian Zhang",
-    "label": "Incoming PhD Student in Statistics, University of Toronto",
+    "label": "PhD Student in Statistics, University of Toronto",
     "avatar": "/images/IMG_0061.jpeg",
-    "lastUpdated": "June 2026",
+    "lastUpdated": "August 2026",
     "pdf": "/CV/ian_CV.pdf",
     "profiles": [
       {
@@ -101,10 +101,20 @@
         "authors": "<strong>Ian Zhang</strong><sup>†</sup>, Finn Tran, Meredith Franklin",
         "date": "2026",
         "title": "Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models."
+      },
+      {
+        "authors": "Gabriel Liu, <strong>Ian Zhang</strong><sup>*,†</sup>, …, Daniel Alessi",
+        "date": "2026",
+        "title": "LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis."
       }
     ]
   },
   "work": [
+    {
+      "position": "Doctoral Student",
+      "company": "Department of Statistical Sciences/University of Toronto",
+      "date": "2026 – Present"
+    },
     {
       "position": "Graduate Research Assistant",
       "company": "Baycrest Institute/University of Toronto",
@@ -132,29 +142,50 @@
   ],
   "teaching": [
     {
-      "course": "UofT Statistical Sciences Research Program (UTSSRP)",
-      "date": "Summer 2026"
+      "academicYear": "2025–2026 School Year",
+      "items": [
+        {
+          "course": "STA302: Methods of Data Analysis I",
+          "date": "Fall 2025"
+        },
+        {
+          "course": "MAT137: Calculus with Proofs",
+          "date": "Fall 2025 & Winter 2026"
+        },
+        {
+          "course": "STA437: Methods of Multivariate Data",
+          "date": "Winter 2026"
+        },
+        {
+          "course": "UofT Statistical Sciences Research Program (UTSSRP)",
+          "date": "Summer 2026"
+        }
+      ]
     },
     {
-      "course": "STA437: Methods of Multivariate Data",
-      "date": "Winter 2026"
-    },
-    {
-      "course": "MAT137: Calculus with Proofs",
-      "date": "Fall 2025 & Winter 2026"
-    },
-    {
-      "course": "STA302: Methods of Data Analysis I",
-      "date": "Fall 2025"
+      "academicYear": "2026–2027 School Year",
+      "items": [
+        {
+          "course": "MAT148: Calculus I with Proofs",
+          "date": "Fall 2026"
+        },
+        {
+          "course": "STA257: Probability and Statistics I",
+          "date": "Fall 2026"
+        },
+        {
+          "course": "MAT149: Calculus II with Proofs",
+          "date": "Winter 2027"
+        },
+        {
+          "course": "STA457: Time Series Analysis",
+          "date": "Winter 2027"
+        }
+      ]
     }
   ],
   "presentations": {
     "talks": [
-      {
-        "venue": "2026 Joint Statistical Meetings",
-        "date": "2026",
-        "description": "Will be presenting <em>RAMA: Redundancy-Aware Model Assessment for PCA-Based Clinical Subtype Discovery.</em>"
-      },
       {
         "venue": "2026 SSC Annual Meeting in Hamilton",
         "date": "2026",

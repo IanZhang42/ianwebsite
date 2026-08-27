@@ -109,8 +109,10 @@
   <div class="cv-section">
     <h2>Teaching</h2>
     <h3>Teaching Assistant</h3>
+    {% for group in cv.teaching %}
+    <h4>{{ group.academicYear }}</h4>
     <ul class="cv-list">
-      {% for item in cv.teaching %}
+      {% for item in group.items %}
       <li class="cv-item cv-item--compact">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ item.course }}</div>
@@ -119,6 +121,7 @@
       </li>
       {% endfor %}
     </ul>
+    {% endfor %}
   </div>
   {% endif %}
 

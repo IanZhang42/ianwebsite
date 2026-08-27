@@ -6,7 +6,7 @@ author_profile: false
 classes: wide
 ---
 
-*Last updated: June 2026*
+*Last updated: August 2026*
 
 # Ian Zhang
 *Curriculum Vitae*
@@ -60,7 +60,12 @@ Hanlong Chen<sup>\*</sup>, **Ian Zhang**<sup>\*</sup>, . . . , Malcolm Binns (20
 **Ian Zhang**<sup>†</sup>, Finn Tran, Meredith Franklin (2026).<br>
    *Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models.*
 
+Gabriel Liu, **Ian Zhang**<sup>\*,†</sup>, . . ., Daniel Alessi (2026).<br>
+   *LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis.*
+
 ## Research Experience
+
+**Doctoral Student**, Department of Statistical Sciences/University of Toronto — *2026 – Present*
 
 **Graduate Research Assistant**, Baycrest Institute/University of Toronto — *2025 – Present*<br>
 Supervisor: Malcolm Binns
@@ -75,17 +80,23 @@ Supervisor: Mike Kouritzin
 
 ### Teaching Assistant
 
-- UofT Statistical Sciences Research Program (UTSSRP) — *Summer 2026*
-- STA437: Methods of Multivariate Data — *Winter 2026*
+#### 2025–2026 School Year
+
 - MAT137: Calculus with Proofs — *Fall 2025 & Winter 2026*
 - STA302: Methods of Data Analysis I — *Fall 2025*
+- STA437: Methods of Multivariate Data — *Winter 2026*
+- UofT Statistical Sciences Research Program (UTSSRP) — *Summer 2026*
+
+#### 2026–2027 School Year
+
+- MAT148: Calculus I with Proofs — *Fall 2026*
+- STA257: Probability and Statistics I — *Fall 2026*
+- MAT149: Calculus II with Proofs — *Winter 2027*
+- STA457: Time Series Analysis — *Winter 2027*
 
 ## Presentations
 
 ### Conference Talks
-
-**2026 Joint Statistical Meetings** — *2026*<br>
-Will be presenting *RAMA: Redundancy-Aware Model Assessment for PCA-Based Clinical Subtype Discovery.*
 
 **2026 SSC Annual Meeting in Hamilton** — *2026*<br>
 Presented *Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks* in the New Frontiers in Bayesian Analysis session.

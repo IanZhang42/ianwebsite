@@ -4,14 +4,30 @@ title: "Courses"
 permalink: /courses/
 author_profile: true
 ---
-Here is a list of the courses I have taken during my time at UofT:
+Here is a list of coursework I completed during my undergraduate and master's studies at UofT, along with my teaching assignments.
+
+## Teaching assignments
+
+### 2025–2026 School Year
+- STA302: Methods of Data Analysis I — Fall 2025
+- MAT137: Calculus with Proofs — Fall 2025 & Winter 2026
+- STA437: Methods of Multivariate Data — Winter 2026
+- UofT Statistical Sciences Research Program (UTSSRP) — Summer 2026
+
+### 2026–2027 School Year
+- MAT148: Calculus I with Proofs — Fall 2026
+- STA257: Probability and Statistics I — Fall 2026
+- MAT149: Calculus II with Proofs — Winter 2027
+- STA457: Time Series Analysis — Winter 2027
+
+## Coursework
 
 ### Masters
 - [STA2101: Applied Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA2111: Graduate Probability I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA2162: Statistical Inference I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA2202: Applied Statistics II](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
-- [STA2112: Mathemarical Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
+- [STA2112: Mathematical Statistics I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA2212: Mathematical Statistics II](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA2475: Survival Analysis](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions)
 - [STA4000: Supervised Reading Project I](https://www.statistics.utoronto.ca/graduate/graduate-course-descriptions) (supervisor: [Dr. Nancy Reid, OC, FRS, FRSC](https://en.wikipedia.org/wiki/Nancy_Reid))
@@ -65,5 +81,4 @@ Here is a list of the courses I have taken during my time at UofT:
 - [STA453H1: Mathematical Statistics II](https://artsci.calendar.utoronto.ca/course/sta453h1)
 - [STA492H1: Seminar in Statistical Sciences](https://artsci.calendar.utoronto.ca/course/sta492h1)
 - [STA497H1Y: Readings in Statistics](https://artsci.calendar.utoronto.ca/course/sta497h1) (advisor: [Dr. Jun Young Park](https://junjypark.github.io/))
-
 
