@@ -103,7 +103,7 @@
         "title": "Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models."
       },
       {
-        "authors": "Gabriel Liu, <strong>Ian Zhang</strong><sup>*,†</sup>, …, Daniel Alessi",
+        "authors": "Gabriel Liu<sup>*</sup>, <strong>Ian Zhang</strong><sup>*,†</sup>, …, Daniel Alessi",
         "date": "2026",
         "title": "LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis."
       }

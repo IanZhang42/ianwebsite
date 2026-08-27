@@ -23,7 +23,7 @@ author_profile: true
 2. **Ian Zhang**\*†, Hanlong Chen\*, …, Howard Chertkow, …, Malcolm Binns. *Redundancy-Aware Model Assessment for Component and Cluster Selection in Clinical Subtype Discovery.* 2026.
 3. Hanlong Chen\*, **Ian Zhang**\*, …, Malcolm Binns. *Continuous Cognitive Heterogeneity in Dementia: A Severity Factor and an Age-Related Amnestic Axis Without Reproducible Subtypes.* 2026.
 4. **Ian Zhang**†, Finn Tran, Meredith Franklin. *Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models.* 2026.
-5. Gabriel Liu, **Ian Zhang**\*†, …, Daniel Alessi. *LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis.* 2026.
+5. Gabriel Liu\*, **Ian Zhang**\*†, …, Daniel Alessi. *LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis.* 2026.
 
 ## Research experience
 

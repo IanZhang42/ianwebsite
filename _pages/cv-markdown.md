@@ -60,7 +60,7 @@ Hanlong Chen<sup>\*</sup>, **Ian Zhang**<sup>\*</sup>, . . . , Malcolm Binns (20
 **Ian Zhang**<sup>†</sup>, Finn Tran, Meredith Franklin (2026).<br>
    *Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models.*
 
-Gabriel Liu, **Ian Zhang**<sup>\*,†</sup>, . . ., Daniel Alessi (2026).<br>
+Gabriel Liu<sup>\*</sup>, **Ian Zhang**<sup>\*,†</sup>, . . ., Daniel Alessi (2026).<br>
    *LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis.*
 
 ## Research Experience
