@@ -3,7 +3,7 @@
     "name": "Ian Zhang",
     "label": "PhD Student in Statistics, University of Toronto",
     "avatar": "/images/IMG_0061.jpeg",
-    "lastUpdated": "August 2026",
+    "lastUpdated": "September 2026",
     "pdf": "/CV/ian_CV.pdf",
     "profiles": [
       {
@@ -42,7 +42,7 @@
     {
       "area": "PhD in Statistics",
       "institution": "University of Toronto",
-      "date": "Sep 2026 –",
+      "date": "Sep 2026 – Present",
       "details": [
         "Advisors: <a href=\"https://joshspeagle.com/\">Joshua Speagle</a>, <a href=\"https://thibaultrandrianarisoa.netlify.app/\">Thibault Randrianarisoa</a>"
       ]
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "area": "Honours BSc in Statistics/Mathematics",
+      "area": "Honours BSc in Statistics & Mathematics",
       "institution": "University of Toronto",
       "date": "Sep 2021 – Jun 2025",
       "details": [
@@ -70,7 +70,7 @@
     "published": [
       {
         "authors": "Michael A. Kouritzin, <strong>Ian Zhang</strong><sup>†</sup>, Jyoti Bhadana, Seoyeon Park.",
-        "title": "Markov processes for enhanced deepfake generation and detection[J].",
+        "title": "Markov Processes for Enhanced Deepfake Generation and Detection.",
         "venue": "<em>AIMS Mathematics</em>, 2026, 11(4): 11731–11759. doi: <a href=\"https://doi.org/10.3934/math.2026483\">10.3934/math.2026483</a>"
       }
     ],
@@ -110,11 +110,6 @@
     ]
   },
   "work": [
-    {
-      "position": "Doctoral Student",
-      "company": "Department of Statistical Sciences/University of Toronto",
-      "date": "2026 – Present"
-    },
     {
       "position": "Graduate Research Assistant",
       "company": "Baycrest Institute/University of Toronto",

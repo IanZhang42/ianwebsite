@@ -18,3 +18,12 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# LaTeX build files (keep the CV source and final PDF)
+CV/*.aux
+CV/*.log
+CV/*.out
+CV/*.synctex.gz
+CV/*.fdb_latexmk
+CV/*.fls
+CV/_minted-*/

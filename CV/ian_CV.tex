@@ -1,238 +1,96 @@
-%====== BASIC PREAMBLE STUFF =======
-\documentclass[11pt]{article}
-\usepackage[nottoc,numbib]{tocbibind}
-\usepackage[a4paper, margin=1in]{geometry} 
-\usepackage[hyphens, spaces, obeyspaces]{url}
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{tabularx}
+\usepackage{array}
 \usepackage{hyperref}
-\hypersetup{
-    colorlinks = false,
-    citecolor = blue
+
+%====================
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\author{Ian Zhang}
+\def\website{\href{https://ian-zhang.com/}{Website}}
+\def\scholar{\href{https://scholar.google.ca/citations?user=0FL5fjMAAAAJ&hl=en}{Google Scholar}}
+\def\email{ianz.zhang@mail.utoronto.ca}
+% blog edited in _header.tex
+% \def\github{github} % github username
+% \def\LinkedIn{linkedin} % linkedin.com/in/______
+
+% Add these commands once, before \begin{document}.
+\newcommand{\pubgroup}[1]{%
+  \par\addvspace{12pt}%
+  \noindent{\large\bfseries #1}\par
 }
-\usepackage{amsmath, amssymb, amsthm, lastpage, upgreek, fancyhdr, seqsplit, bm, mathrsfs, accents, transparent, dsfont, float, esint, tikz, lipsum, lmodern, hyperref, cleveref, bigints, tikz-among-us, graphicx, xcolor, listings, breqn, cancel, enumitem}
-\usepackage{minted}
-\usepackage[most]{tcolorbox}
-\usepackage[framemethod=TikZ]{mdframed}
-\hypersetup{pdfborder=0 0 0}
-\usepgflibrary{arrows}
-\usepackage[nodisplayskipstretch]{setspace}\onehalfspacing
-\tcbuselibrary{theorems}
-\allowdisplaybreaks
-\setlength{\parindent}{0pt}
 
-
-%====== ENVIRONMENTS STUFF ======
-\renewcommand\qedsymbol{$\blacksquare$}
-
-\theoremstyle{definition}
-\newtheorem*{definition}{Definition}
-\newtheorem*{theorem}{Theorem}
-\newtheorem*{claim}{Claim}
-\newtheorem*{lemma}{Lemma}
-\newtheorem*{corollary}{Corollary}
-\newtheorem*{proposition}{Proposition}
-
-\newcounter{theo}[section]\setcounter{theo}{0}
-\renewcommand{\thetheo}{\arabic{section}.\arabic{theo}}
-\newenvironment{theo}[2][]{%
-\refstepcounter{theo}%
-\ifstrempty{#1}%
-{\mdfsetup{%
-frametitle={%
-\tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=green!20]
-{\strut};}}
-}%
-{\mdfsetup{%
-frametitle={%
-\tikz[baseline=(current bounding box.east),outer sep=0pt]
-\node[anchor=east,rectangle,fill=green!20]
-{\strut#1};}}%
-}%
-\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
-linewidth=2pt,topline=true,%
-frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+\newcommand{\pubentry}[3]{%
+  \par\addvspace{9pt}%
+  \noindent
+  \begin{minipage}[t]{0.88\linewidth}
+    \raggedright\bfseries #1\par
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.10\linewidth}
+    \raggedleft\textbf{#2}\par
+  \end{minipage}%
+  \par\nobreak\vspace{3pt}%
+  \noindent{\itshape #3\par}%
 }
-\begin{mdframed}[]\relax%
-\label{#2}}{\end{mdframed}}
 
 
-%====== NEW COMMANDS ======
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb N}
-\newcommand{\Z}{\mathbb Z}
-\newcommand{\Q}{\mathbb Q}
-\newcommand{\1}{\mathds 1}
-\newcommand{\Var}{\text{Var}}
-\newcommand{\Cov}{\text{Cov}}
-\newcommand{\sd}{\text{sd}}
-\newcommand{\se}{\text{se}}
-\renewcommand{\L}{\mathcal {L}}
-\renewcommand{\lambda}{\uplambda}
-\newcommand{\iidsim}{\stackrel{iid}{\sim}}
-\newcommand{\otherwise}{\text{otherwise}}
-\newcommand{\indep}{\perp \!\!\! \perp}
-\renewcommand{\epsilon}{\varepsilon}
-\newcommand{\st}{\text{ s.t. }}
-\newcommand{\ds}{\displaystyle}
-\newcommand{\ind}{\stackrel{d}{\to}}
-\newcommand{\inp}{\stackrel{p}{\to}}
-\DeclareMathOperator*{\argmax}{arg\,max}
-\DeclareMathOperator*{\argmin}{arg\,min}
 
 
-%====== HEADER AND TITLE =======
 
 
-\title{Ian Zhang}
-\author{Curriculum Vitae}
 
 
 \begin{document}
-\hfill {\scriptsize\textit{\textcolor{gray}{Last updated: August 2026}}}
-\begin{center}
-    {\huge \textbf{Ian Zhang}}\\
-    \textit{Curriculum Vitae}
-\end{center}
 
-\section*{Contact Information}
-Email: \href{mailto:ianz.zhang@mail.utoronto.ca}{ianz.zhang@mail.utoronto.ca}\\
-Website: \href{www.ian-zhang.com}{ian-zhang.com}\\
-Google Scholar: \url{https://scholar.google.ca/citations?user=0FL5fjMAAAAJ&hl=en}\\
-ORCiD: 0009-0003-0066-6865
+\import{sections/}{_header}
+\vspace*{10pt}
 
-\section*{Education}
-\textbf{PhD in Statistics}, University of Toronto \hfill \textit{Sep 2026 -}
-\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt]
-    \item \underline{Advisors:} \href{https://joshspeagle.com/}{Joshua Speagle}, \href{https://thibaultrandrianarisoa.netlify.app/}{Thibault Randrianarisoa}
-\end{itemize}
-\vspace{0.5em}
-\textbf{MSc in Statistics}, University of Toronto \hfill \textit{Sep 2025 - Jun 2026}
-\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt]
-    \item \underline{Advisor:} \href{https://en.wikipedia.org/wiki/Nancy_Reid}{Nancy Reid}
-    % \item \underline{Relevant coursework:} Applied statistics, mathematical statistics, graduate probability, survival analysis, asymptotic statistics, statistical inference
-\end{itemize}
-\vspace{0.5em}
-\textbf{Honours BSc in Statistics/Mathematics}, University of Toronto \hfill \textit{Sep 2021 - Jun 2025}
-\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt]
-    \item \underline{Advisor:} \href{https://junjypark.github.io/}{Jun Young Park}
-    \item Graduated with high distinction
-    % \item \underline{Relevant coursework:} Machine learning, stochastic processes, statistical inference, methods of multivariate data, real analysis, linear algebra, ordinary and partial differential equations, introduction to computer science and programming
-  \end{itemize}
-  
+\section{Education}
+\import{sections/}{education}
+\vspace*{10pt}
 
-\section*{Publications and Preprints}
-{\small $^\dag$: Corresponding Author; \hspace{1cm} *: Equal contribution}
-\subsection*{Published}
-\begin{enumerate}
-    \item Michael A. Kouritzin, \textbf{Ian Zhang}$^\dag$, Jyoti Bhadana, Seoyeon Park. Markov processes for enhanced deepfake generation and detection[J]. \textit{AIMS Mathematics}, 2026, 11(4): 11731-11759. doi: \url{10.3934/math.2026483}
-\end{enumerate}
+\section{Publications and Preprints}
+\vspace*{3pt}
+\import{sections/}{publications}
+\vspace*{10pt}
 
-\subsection*{Under Review}
-\begin{enumerate}
-    \item Aditya Khan, \textbf{Ian Zhang} \hfill \textit{2026}\\
-    Parametric Hotspot Analysis with the Getis-Ord Statistic
-\end{enumerate}
+\section{Experience}
+\import{sections/}{experience}
+\vspace*{10pt}
 
-\subsection*{In Progress}
-\begin{enumerate}
-    \item \textbf{Ian Zhang}$^\dag$, Thibault Randrianarisoa \hfill \textit{2026}\\
-    Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks 
-    \item \textbf{Ian Zhang}$^{*,\dag}$, Hanlong Chen$^*$, $\ldots$, Howard Chertkow, $\ldots$, Malcolm Binns \hfill \textit{2026}\\
-    Redundancy-Aware Model Assessment for Component and Cluster Selection in Clinical Subtype Discovery
-    \item Hanlong Chen$^*$, \textbf{Ian Zhang}$^{*}$, \ldots, Malcolm Binns \hfill \textit{2026}\\
-    Continuous Cognitive Heterogeneity in Dementia: A Severity Factor and an Age-Related Amnestic Axis Without Reproducible Subtypes
-    \item \textbf{Ian Zhang}$^\dag$, Finn Tran, Meredith Franklin \hfill \textit{2026}\\
-    Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models
-    \item Gabriel Liu$^*$, \textbf{Ian Zhang}$^{*,\dag}$, \ldots, Daniel Alessi \hfill \textit{2026}\\
-    LiBRE: Statistical Learning for Representative Brine Design and
-    Lithium Enrichment Analysis
-\end{enumerate}
+\section{Teaching}
+\vspace*{3pt}
+\import{sections/}{teaching}
+\vspace*{10pt}
 
-\section*{Research Experience}
-\textbf{Doctoral Student}, Department of Statistical Sciences/University of Toronto \hfill \textit{2026-Present}
-\vspace{0.5em}
+\section{Presentations}
+\vspace*{3pt}
+\import{sections/}{presentations}
+\vspace*{10pt}
 
-\textbf{Graduate Research Assistant}, Baycrest Institute/University of Toronto \hfill \textit{2025-Present}\\
-\indent\hspace{0.2cm} Supervisor: Malcolm Binns
-\vspace{0.5em}
+\section{Awards}
+\vspace*{3pt}
+\import{sections/}{awards}
+\vspace*{10pt}
 
-\textbf{Summer Research Trainee}, McGill University \hfill \textit{2025}\\
-\indent\hspace{0.2cm} Supervisor: \href{https://www.xialab.ca/}{Jianguo (Jeff) Xia}
-\vspace{0.5em}
+\section{Grants}
+\vspace*{3pt}
+\import{sections/}{grants}
+\vspace*{10pt}
 
-\textbf{Research Assistant}, University of Alberta \hfill \textit{2023-2024}\\
-\indent\hspace{0.2cm} Supervisor: \href{https://www.math.ualberta.ca/~mkouritz/Kouritzin_M.html}{Mike Kouritzin}
+\section{Services}
+\vspace*{3pt}
+\import{sections/}{services}
+\vspace*{10pt}
 
-\section*{Teaching}
-\subsection*{Teaching Assistant}
-\subsubsection*{2025-2026 School Year}
-\textbf{STA302: Methods of Data Analysis I} \hfill \textit{Fall 2025}\\
-\textbf{MAT137: Calculus with Proofs} \hfill \textit{Fall 2025 \& Winter 2026}\\
-\textbf{STA437: Methods of Multivariate Data} \hfill \textit{Winter 2026}\\
-\textbf{UofT Statistical Sciences Research Program (UTSSRP)}\hfill \textit{Summer 2026}
-
-\subsubsection*{2026-2027 School Year}
-\textbf{MAT148: Calculus I with Proofs} \hfill \textit{Fall 2026}\\
-\textbf{STA257: Probability and Statistics I} \hfill\textit{Fall 2026}\\
-\textbf{MAT149: Calculus II with Proofs} \hfill\textit{Winter 2027}\\
-\textbf{STA457: Time Series Analysis} \hfill \textit{Winter 2027}
-
-
-\section*{Presentations}
-\subsection*{Conference Talks}
-\textbf{2026 SSC Annual Meeting in Hamilton} \hfill \textit{2026}\\
-Presented \textit{Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks } in the New Frontiers in Bayesian Analysis session.
-\vspace{0.5em}
-
-\textbf{2025 SSC Annual Meeting in Saskatoon} \hfill \textit{2025}\\
-Presented \textit{Markov Processes for Enhanced Deepfake Generation and Detection} in the Probability session. 
-\vspace{0.5em}
-
-\textbf{Third Joint SIAM/CAIMS Annual Meetings} \hfill \textit{2025}\\
-Presented \textit{Markov Processes for Enhanced Deepfake Generation and Detection} in the Machine Learning and Stochastic Processes session.
-
-\subsection*{Posters}
-\textbf{The Thirteenth Annual Canadian Statistics Student Conference} \hfill \textit{2025}\\
-Presented \textit{Comparing Exact and Approximate Inference for Spatial Autocorrelation Tests: A Power Analysis}.
-
-\section*{Honours and Awards}
-\textbf{Anna \& Alex Beverly Memorial Fellowship} \hfill \textit{2025}\\
-Awarded by University College (University of Toronto) for general proficiency during my undergraduate degree.
-\vspace{0.5em}
-
-\textbf{NSERC Undergraduate Student Research Award (x2)} \hfill \textit{2023, 2024}\\
-Awarded by the University of Alberta to research Markov process methods for deepfake generation and detection. 
-\vspace{0.5em}
-
-\textbf{Jack Zwaigenbaum Scholarship }\hfill \textit{2022}\\
-Awarded by University College (University of Toronto) for academic excellence in my first year of undergraduate studies.
-\vspace{0.5em}
-
-\textbf{Dean's List Scholar (x4)} \hfill \textit{2022, 2023, 2024, 2025}\\
-Awarded by the Faculty of Arts and Science (University of Toronto) for maintaining academic excellence every year of my undergraduate degree. 
-
-\section*{Grants}
-\textbf{CSSC Travel Grant} \hfill \textit{2025}\\
-Awarded to full-time Canadian students presenting a poster or giving a talk at the Canadian Statistics Student Conference.
-
-
-
-
-\section*{Services}
-\subsection*{Conferences}
-\textbf{Session chair, 2025 Third Joint SIAM/CAIMS Annual Meetings}\\
-Chaired the ``Machine Learning and Stochastic Processes'' session.
-
-
-\section*{Other}
-\underline{Citizenship:} Canadian\\
-\underline{Languages Spoken:} English (native), Mandarin (native), Japanese (intermediate)\\
-\underline{Memberships:} Statistical Society of Canada
-
-
-
-
-
-
+\section{Other}
+\vspace*{3pt}
+\import{sections/}{other}
+\vspace*{10pt}
 
 \end{document}

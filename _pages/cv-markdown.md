@@ -6,12 +6,12 @@ author_profile: false
 classes: wide
 ---
 
-*Last updated: August 2026*
+*Last updated: September 2026*
 
 # Ian Zhang
 *Curriculum Vitae*
 
-My downloadable CV can be found <a href="/CV/ian_CV.pdf" target="_blank" rel="noopener">here</a>.
+My downloadable CV can be found <a href="{{ site.baseurl }}/CV/ian_CV.pdf" target="_blank" rel="noopener">here</a>.
 
 ## Contact Information
 
@@ -22,13 +22,13 @@ My downloadable CV can be found <a href="/CV/ian_CV.pdf" target="_blank" rel="no
 
 ## Education
 
-**PhD in Statistics**, University of Toronto — *Sep 2026 –*
+**PhD in Statistics**, University of Toronto — *Sep 2026 – Present*
 - Advisors: Joshua Speagle, Thibault Randrianarisoa
 
 **MSc in Statistics**, University of Toronto — *Sep 2025 – Jun 2026*
 - Advisor: Nancy Reid
 
-**Honours BSc in Statistics/Mathematics**, University of Toronto — *Sep 2021 – Jun 2025*
+**Honours BSc in Statistics & Mathematics**, University of Toronto — *Sep 2021 – Jun 2025*
 - Advisor: Jun Young Park
 - Graduated with high distinction
 
@@ -38,7 +38,7 @@ My downloadable CV can be found <a href="/CV/ian_CV.pdf" target="_blank" rel="no
 
 ### Published
 
-Michael A. Kouritzin, **Ian Zhang**<sup>†</sup>, Jyoti Bhadana, Seoyeon Park. Markov processes for enhanced deepfake generation and detection[J]. *AIMS Mathematics*, 2026, 11(4): 11731–11759. doi: 10.3934/math.2026483
+Michael A. Kouritzin, **Ian Zhang**<sup>†</sup>, Jyoti Bhadana, Seoyeon Park. Markov Processes for Enhanced Deepfake Generation and Detection. *AIMS Mathematics*, 2026, 11(4): 11731–11759. doi: 10.3934/math.2026483
 
 ### Under Review
 
@@ -64,8 +64,6 @@ Gabriel Liu<sup>\*</sup>, **Ian Zhang**<sup>\*,†</sup>, . . ., Daniel Alessi (
    *LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis.*
 
 ## Research Experience
-
-**Doctoral Student**, Department of Statistical Sciences/University of Toronto — *2026 – Present*
 
 **Graduate Research Assistant**, Baycrest Institute/University of Toronto — *2025 – Present*<br>
 Supervisor: Malcolm Binns
