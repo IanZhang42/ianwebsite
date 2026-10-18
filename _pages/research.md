@@ -11,19 +11,22 @@ author_profile: true
 
 ### Published
 
-1. Michael A. Kouritzin, **Ian Zhang**†, Jyoti Bhadana, Seoyeon Park. Markov processes for enhanced deepfake generation and detection. *AIMS Mathematics*, 2026, 11(4), 11731–11759. [doi:10.3934/math.2026483](https://doi.org/10.3934/math.2026483)
+1. Michael A. Kouritzin, **Ian Zhang**†, Jyoti Bhadana, Seoyeon Park. Markov Processes for Enhanced Deepfake Generation and Detection. *AIMS Mathematics*, 2026, 11(4): 11731–11759. [doi: 10.3934/math.2026483](https://doi.org/10.3934/math.2026483)
 
 ### Under review
 
 1. Aditya Khan, **Ian Zhang**. *Parametric Hotspot Analysis with the Getis-Ord Statistic.* 2026.
 
+### Preprints
+
+1. **Ian Zhang**†, Thibault Randrianarisoa. *The Impact of Likelihood Tempering on the Limiting Predictive Moments of Variational Bayesian Linear Neural Networks.* 2026. [arXiv: 2610.09132](https://arxiv.org/abs/2610.09132)
+
 ### In progress
 
-1. **Ian Zhang**†, Thibault Randrianarisoa. *Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks.* 2026.
-2. **Ian Zhang**\*†, Hanlong Chen\*, …, Howard Chertkow, …, Malcolm Binns. *Redundancy-Aware Model Assessment for Component and Cluster Selection in Clinical Subtype Discovery.* 2026.
-3. Hanlong Chen\*, **Ian Zhang**\*, …, Malcolm Binns. *Continuous Cognitive Heterogeneity in Dementia: A Severity Factor and an Age-Related Amnestic Axis Without Reproducible Subtypes.* 2026.
-4. **Ian Zhang**†, Finn Tran, Meredith Franklin. *Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models.* 2026.
-5. Gabriel Liu\*, **Ian Zhang**\*†, …, Daniel Alessi. *LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis.* 2026.
+1. **Ian Zhang**\*†, Hanlong Chen\*, …, Howard Chertkow, …, Malcolm Binns. *Redundancy-Aware Model Assessment for Component and Cluster Selection in Clinical Subtype Discovery.* 2026.
+2. Hanlong Chen\*, **Ian Zhang**\*, …, Malcolm Binns. *Continuous Cognitive Heterogeneity in Dementia: A Severity Factor and an Age-Related Amnestic Axis Without Reproducible Subtypes.* 2026.
+3. **Ian Zhang**†, Finn Tran, Meredith Franklin. *Spatial Dependence Regularization for Improved Generalization in Climate Downscaling Models.* 2026.
+4. Gabriel Liu\*, **Ian Zhang**\*†, …, Daniel Alessi. *LiBRE: Statistical Learning for Representative Brine Design and Lithium Enrichment Analysis.* 2026.
 
 ## Research experience
 

@@ -6,7 +6,7 @@ author_profile: false
 classes: wide
 ---
 
-*Last updated: September 2026*
+*Last updated: October 2026*
 
 # Ian Zhang
 *Curriculum Vitae*
@@ -38,7 +38,7 @@ My downloadable CV can be found <a href="{{ site.baseurl }}/CV/ian_CV.pdf" targe
 
 ### Published
 
-Michael A. Kouritzin, **Ian Zhang**<sup>†</sup>, Jyoti Bhadana, Seoyeon Park. Markov Processes for Enhanced Deepfake Generation and Detection. *AIMS Mathematics*, 2026, 11(4): 11731–11759. doi: 10.3934/math.2026483
+Michael A. Kouritzin, **Ian Zhang**<sup>†</sup>, Jyoti Bhadana, Seoyeon Park. Markov Processes for Enhanced Deepfake Generation and Detection. *AIMS Mathematics*, 2026, 11(4): 11731–11759. [doi: 10.3934/math.2026483](https://doi.org/10.3934/math.2026483)
 
 ### Under Review
 
@@ -46,10 +46,13 @@ Aditya Khan, **Ian Zhang** (2026).<br>
 *Parametric Hotspot Analysis with the Getis-Ord Statistic.*
 
 
-### In Progress
+### Preprints
 
 **Ian Zhang**<sup>†</sup>, Thibault Randrianarisoa (2026).<br>
-   *Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks.*
+   *The Impact of Likelihood Tempering on the Limiting Predictive Moments of Variational Bayesian Linear Neural Networks.*<br>
+   [arXiv: 2610.09132](https://arxiv.org/abs/2610.09132)
+
+### In Progress
 
 **Ian Zhang**<sup>\*,†</sup>, Hanlong Chen<sup>\*</sup>, . . ., Howard Chertkow, . . ., Malcolm Binns (2026).<br>
    *Redundancy-Aware Model Assessment for Component and Cluster Selection in Clinical Subtype Discovery.*

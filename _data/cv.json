@@ -3,7 +3,7 @@
     "name": "Ian Zhang",
     "label": "PhD Student in Statistics, University of Toronto",
     "avatar": "/images/IMG_0061.jpeg",
-    "lastUpdated": "September 2026",
+    "lastUpdated": "October 2026",
     "pdf": "/CV/ian_CV.pdf",
     "profiles": [
       {
@@ -71,7 +71,7 @@
       {
         "authors": "Michael A. Kouritzin, <strong>Ian Zhang</strong><sup>†</sup>, Jyoti Bhadana, Seoyeon Park.",
         "title": "Markov Processes for Enhanced Deepfake Generation and Detection.",
-        "venue": "<em>AIMS Mathematics</em>, 2026, 11(4): 11731–11759. doi: <a href=\"https://doi.org/10.3934/math.2026483\">10.3934/math.2026483</a>"
+        "venue": "<em>AIMS Mathematics</em>, 2026, 11(4): 11731–11759. <a href=\"https://doi.org/10.3934/math.2026483\">doi: 10.3934/math.2026483</a>"
       }
     ],
     "underReview": [
@@ -81,12 +81,15 @@
         "title": "Parametric Hotspot Analysis with the Getis-Ord Statistic."
       }
     ],
-    "inProgress": [
+    "preprints": [
       {
         "authors": "<strong>Ian Zhang</strong><sup>†</sup>, Thibault Randrianarisoa",
         "date": "2026",
-        "title": "Likelihood Tempering to Mitigate Prior Dominance in Variational Posteriors for Bayesian Neural Networks."
-      },
+        "title": "The Impact of Likelihood Tempering on the Limiting Predictive Moments of Variational Bayesian Linear Neural Networks.",
+        "venue": "<a href=\"https://arxiv.org/abs/2610.09132\">arXiv: 2610.09132</a>"
+      }
+    ],
+    "inProgress": [
       {
         "authors": "<strong>Ian Zhang</strong><sup>*,†</sup>, Hanlong Chen<sup>*</sup>, …, Howard Chertkow, …, Malcolm Binns",
         "date": "2026",
