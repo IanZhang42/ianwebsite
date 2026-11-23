@@ -1,0 +1,54 @@
+@import url("nav.css");
+@font-face{font-family:Inter;src:url(fonts/inter.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/inter-medium.woff) format("woff");font-weight:500 800;font-display:swap}
+@font-face{font-family:"STIX Two Text";src:url(fonts/stix-two-text.woff) format("woff");font-weight:400 700;font-display:swap}
+@font-face{font-family:"STIX Two Text";src:url(fonts/stix-two-text-italic.woff) format("woff");font-weight:400 700;font-style:italic;font-display:swap}
+:root{color-scheme:dark;--bg:#0b1116;--panel:#10191e;--line:#293439;--text:#f0f3f2;--muted:#a7b3b6;--mint:#8be4ce;--serif:"STIX Two Text",Georgia,serif;--sans:Inter,system-ui,sans-serif;--mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;--page:1184px;--gutter:clamp(20px,5.6vw,88px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:.22em}
+button,input,select{font:inherit}
+button{cursor:pointer}
+:where(button,input,a,summary,canvas,select):focus-visible{outline:2px solid var(--mint);outline-offset:4px}
+::selection{color:#06201c;background:#9be6d3}
+h1,h2,h3,p,figure{margin:0}
+img{display:block;max-width:100%}
+[hidden]{display:none!important}
+.icon{display:inline-block;width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.shell{width:min(var(--page),calc(100% - 2 * var(--gutter)));margin-inline:auto}
+site-header,site-footer{display:block}
+.overline{display:flex;align-items:center;gap:10px;text-transform:uppercase;color:var(--mint);font:500 .75rem/1.4 var(--mono);letter-spacing:.14em}
+.marker{height:1px;width:23px;background:var(--mint);display:inline-block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:10px 19px;border:1px solid transparent;border-radius:6px;font-size:.875rem;line-height:1.45;font-weight:500;text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.btn .icon{width:17px;height:17px}
+.btn.primary{background:var(--mint);color:#0b2824;border-color:var(--mint)}
+.btn.primary:hover{background:#a6f1df;transform:translateY(-2px)}
+.btn.secondary{background:#ffffff05;border-color:#39474e;color:var(--text)}
+.btn.secondary:hover{background:#182329;border-color:#708383;transform:translateY(-2px)}
+.text-link{font-size:.875rem;font-weight:500;color:var(--mint);text-decoration:none;display:inline-flex;align-items:center;gap:9px}
+.text-link:hover{text-decoration:underline}
+.text-link .icon{width:16px;height:16px}
+.modal{position:fixed;inset:0;border:1px solid #38494f;background:#101a20;color:var(--text);border-radius:13px;padding:0;box-shadow:0 24px 110px #000a;max-height:85dvh;overflow:auto}
+.modal::backdrop{background:#02070bc7;backdrop-filter:blur(6px)}
+body:has(dialog[open]){overflow:hidden}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+.fallback-nav{display:flex;align-items:center;flex-wrap:wrap;gap:18px;padding-block:16px}
+.fallback-nav a{text-decoration:none;color:var(--mint)}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f9f7;
+  --panel: #ffffff;
+  --line: #cbd8d2;
+  --text: #182b2d;
+  --muted: #48615f;
+  --mint: #126853;
+}
+html[data-theme="light"] ::selection { color: #103f35; background: #b7e5d2; }
+html[data-theme="light"] .btn.primary { color: #fff; }
+html[data-theme="light"] .btn.primary:hover { background: #0b5443; border-color: #0b5443; }
+html[data-theme="light"] .btn.secondary { border-color: #8ca49b; background: var(--panel); }
+html[data-theme="light"] .btn.secondary:hover { border-color: var(--mint); background: #e7f3eb; }
+html[data-theme="light"] .modal { background: var(--panel); border-color: #a5b9af; box-shadow: 0 18px 80px #18342a38; }
+html[data-theme="light"] .modal::backdrop { background: #1a2f2a65; }
