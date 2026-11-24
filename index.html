@@ -7,7 +7,7 @@
   <meta name="description" content="Research, teaching, and course notes from Ian Zhang, a PhD student in Statistics at the University of Toronto studying approximate Bayesian inference for imaging data.">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/home.css"><link rel="preload" href="assets/fonts/stix-two-text.woff" as="font" type="font/woff" crossorigin>
   <script src="assets/site.js" defer></script><script src="assets/surface.js" defer></script><script src="assets/home.js" defer></script>
-  <noscript><style>.plot-stage canvas,.plot-modes,.plot-hint{display:none}.plot-stage img{width:100%;height:100%;object-fit:contain}</style></noscript>
+  <noscript><style>.plot-stage canvas,.plot-toolbar,.plot-hint{display:none!important}.plot-stage img{width:100%;height:100%;object-fit:contain}</style></noscript>
 </head>
 <body>
   <site-header></site-header>
@@ -19,10 +19,36 @@
         <p class="intro">I study approximate Bayesian inference and how we can use it to learn about stars and galaxies from images.</p>
         <div class="hero-actions"><a class="btn primary" href="research/"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>Explore research</a><a class="btn secondary" href="mailto:ianz.zhang@mail.utoronto.ca"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Get in touch</a></div>
       </div>
-      <figure class="plot-shell" aria-labelledby="density-caption">
-        <div class="plot-toolbar"><span class="plot-equation" aria-hidden="true">p(x₁, x₂)</span><div class="plot-modes" role="group" aria-label="Density view"><button type="button" data-density-mode="surface" aria-pressed="true">Surface</button><button type="button" data-density-mode="contours" aria-pressed="false">Contours</button></div></div>
-        <div class="plot-stage"><canvas id="density-canvas" tabindex="0" role="img" aria-label="A two-peaked Gaussian mixture. In surface view, drag or use arrow keys to rotate. Double-click to reset.">A Gaussian mixture with two peaks.</canvas><noscript><img src="assets/figures/density.webp" width="660" height="370" alt="Wireframe density with two peaks"></noscript></div>
-        <figcaption id="density-caption"><span class="plot-name"><span class="plot-swatch"></span>Gaussian mixture density</span><span class="plot-hint"><svg class="icon" aria-hidden="true"><use href="#i-rotate"/></svg><span id="density-hint">Drag to rotate</span></span></figcaption>
+      <figure class="plot-shell" aria-labelledby="density-title">
+        <div class="plot-toolbar">
+          <div class="plot-weight">
+            <span class="plot-weight-label" id="weight-label">Likelihood weight <i>λ</i></span>
+            <div class="plot-modes plot-powers" role="group" aria-labelledby="weight-label">
+              <button type="button" data-likelihood-power="0" aria-pressed="false" aria-label="0, prior only">0</button>
+              <button type="button" data-likelihood-power="1" aria-pressed="true" aria-label="1, ordinary posterior">1</button>
+              <button type="button" data-likelihood-power="4" aria-pressed="false" aria-label="4, stronger likelihood">4</button>
+            </div>
+          </div>
+          <div class="plot-modes" role="group" aria-label="Posterior view">
+            <button type="button" data-density-mode="surface" aria-pressed="true">Surface</button>
+            <button type="button" data-density-mode="contours" aria-pressed="false">Contours</button>
+          </div>
+        </div>
+        <div class="plot-stage">
+          <canvas id="density-canvas" tabindex="0" role="img" aria-label="Relative posterior density of the two network weights. Drag or use arrow keys in surface view to rotate. Double-click to reset." aria-describedby="density-state density-description">Relative density of the network weights.</canvas>
+          <noscript><img src="assets/figures/density.webp" width="660" height="370" alt="Posterior density at likelihood weight one, with two peaks at opposite pairs of weight signs"></noscript>
+        </div>
+        <figcaption id="density-caption">
+          <div class="plot-caption-line">
+            <span class="plot-name"><span class="plot-swatch" aria-hidden="true"></span><span id="density-title">Likelihood tempering</span></span>
+            <span class="plot-hint"><svg class="icon" aria-hidden="true"><use href="#i-rotate"/></svg><span id="density-hint">Drag to rotate</span></span>
+          </div>
+          <p class="plot-description" id="density-description">This neural network predicts <span class="plot-math">w₁w₂</span>. At likelihood weights 1 and 4, the observation <span class="plot-math">y = 1.5</span> favors two peaks because flipping both signs leaves the prediction unchanged.</p>
+          <div class="plot-footnote"><span id="density-state" role="status" aria-live="polite" aria-atomic="true">Ordinary posterior</span><span class="plot-separator" aria-hidden="true">·</span><details class="plot-details"><summary>Model &amp; scale</summary>
+            <p>For input 1, a linear network with one hidden unit multiplies two weights. Each weight has an independent standard normal prior. The observation is synthetic, with Gaussian noise of standard deviation 0.65.</p>
+            <p>At λ = 0 the plot shows the prior. At λ = 1 it shows the ordinary posterior. At λ = 4 the observation gets four times the weight in the log posterior. Each density is scaled to its own peak.</p>
+          </details></div>
+        </figcaption>
       </figure>
     </div></section>
     <section class="shell research-preview" aria-labelledby="research-title">

@@ -7,17 +7,33 @@
 .intro{font-size:1rem;line-height:1.78;color:#a8b5ba;max-width:424px;margin-top:15px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:27px}
 .plot-shell{min-width:0;position:relative;display:flex;flex-direction:column;margin:0;align-self:stretch;justify-content:center}
-.plot-toolbar{display:flex;justify-content:space-between;align-items:center;margin:0 9px 0 7px;z-index:1}
-.plot-equation{font:italic 1.12rem var(--serif);color:#80a69f}
+.plot-toolbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:0 9px 0 7px;z-index:1}
+.plot-weight{display:flex;align-items:center;gap:9px}
+.plot-weight-label{font:500 .78rem/1.4 var(--sans);color:var(--muted);white-space:nowrap}
+.plot-weight-label i,.plot-math{font-family:var(--serif);font-style:italic}
+.plot-weight-label i{font-size:1rem}
+.plot-math{white-space:nowrap;font-size:1.08em}
 .plot-modes{display:inline-flex;padding:3px;border:1px solid #314044;border-radius:7px;background:#0a1419}
 .plot-modes button{border:1px solid transparent;padding:4px 11px;background:transparent;color:#a5b2b6;border-radius:4px;font:500 .8rem/1.5 var(--sans)}
 .plot-modes button[aria-pressed="true"]{border-color:#3c5453;color:#bbefdf;background:#203331}
 .plot-modes button:hover{color:var(--mint)}
+.plot-powers button{min-width:30px;padding-inline:6px;font-variant-numeric:tabular-nums}
 .plot-stage{position:relative;height:clamp(242px,23.3vw,347px)}
 .plot-stage canvas{display:block;width:100%;height:100%;touch-action:pan-y;cursor:grab;border-radius:8px}
 .plot-stage canvas:active{cursor:grabbing}
-.plot-shell figcaption{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#acb9ba;font:400 .75rem/1.5 var(--mono);margin:0 10px}
+.plot-shell figcaption{color:#acb9ba;font:400 .75rem/1.5 var(--mono);margin:0 10px}
 .plot-name,.plot-hint{display:inline-flex;align-items:center;gap:8px}
+.plot-caption-line{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.plot-description{max-width:66ch;margin-top:7px;font:400 .88rem/1.5 var(--sans);color:var(--muted)}
+.plot-footnote{display:flex;align-items:baseline;flex-wrap:wrap;gap:3px 8px;margin-top:6px;font:400 .78rem/1.5 var(--sans);color:var(--muted)}
+.plot-footnote:has(details[open]){display:block}
+.plot-footnote:has(details[open]) .plot-separator{margin-inline:8px}
+.plot-details{display:inline}
+.plot-details summary{display:inline-block;cursor:pointer;list-style:none;color:var(--mint);text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 55%,transparent);text-underline-offset:3px;border-radius:2px}
+.plot-details summary::-webkit-details-marker{display:none}
+.plot-details summary:hover{text-decoration-color:currentColor}
+.plot-details p{margin-top:8px;max-width:66ch;color:var(--muted);font:400 .84rem/1.5 var(--sans)}
+@media(min-width:706px) and (max-width:1090px), (max-width:415px){.plot-weight{align-items:flex-start;flex-direction:column;gap:4px}.plot-toolbar{align-items:flex-end}}
 .plot-swatch{width:16px;border-top:2px solid var(--mint);box-shadow:0 0 7px #76e6bb55}
 .plot-hint{color:#92a1a7;font-family:var(--sans)}.plot-hint .icon{width:14px;height:14px}
 .research-preview{padding-block:48px 62px}
@@ -81,7 +97,6 @@ html[data-theme="light"] .role { color: #263e3d; }
 html[data-theme="light"] .intro,
 html[data-theme="light"] .plot-shell figcaption,
 html[data-theme="light"] .plot-hint { color: var(--muted); }
-html[data-theme="light"] .plot-equation { color: #467067; }
 html[data-theme="light"] .plot-modes {
   background: #f7faf7;
   border-color: #b6ccc0;

@@ -1,24 +1,10 @@
-/* A normalized Gaussian mixture, shown as a height field and an isodensity map. */
+/* Relative posterior density for two scalar weights, shown as a surface or isodensity map. */
 (() => {
   function initialize() {
     const canvas = document.getElementById('density-canvas');
     if (!canvas) return;
     const context = canvas.getContext('2d');
     if (!context) return;
-
-    const components = [
-      { weight: 0.66, x: 0.70, y: -0.30, sx: 0.77, sy: 0.91, correlation: 0.26 },
-      { weight: 0.34, x: -1.23, y: 0.45, sx: 0.66, sy: 0.77, correlation: -0.32 },
-    ];
-    function density(x, y) {
-      return components.reduce((total, c) => {
-        const u = (x - c.x) / c.sx;
-        const v = (y - c.y) / c.sy;
-        const det = 1 - c.correlation ** 2;
-        const exponent = -(u * u - 2 * c.correlation * u * v + v * v) / (2 * det);
-        return total + c.weight * Math.exp(exponent) / (2 * Math.PI * c.sx * c.sy * Math.sqrt(det));
-      }, 0);
-    }
 
     const clamp = (value, low, high) => Math.min(high, Math.max(low, value));
     const palettes = {
@@ -36,84 +22,95 @@
       },
     };
     let theme, palette;
-    const xMax = 3.3;
-    const yMax = 2.7;
-    const nx = 84;
-    const ny = 68;
-    const vertices = [];
-    const faces = [];
-    let peak = 0;
-    for (let j = 0; j <= ny; j++) {
-      for (let i = 0; i <= nx; i++) {
-        const x = xMax * (2 * i / nx - 1);
-        const y = yMax * (2 * j / ny - 1);
-        const value = density(x, y);
-        peak = Math.max(peak, value);
-        vertices.push({ x, y, value });
+    // f(1) = w₁w₂, independent standard normal priors and one Gaussian observation.
+    const observation = 1.5;
+    const noiseVariance = 0.65 ** 2;
+    const xMax = 3, yMax = 3;
+    const nx = 84, ny = 84;
+    const surfaceHeight = 3.2;
+    const likelihoodStates = new Map([[0, 'Prior only'], [1, 'Ordinary posterior'], [4, 'Stronger likelihood']]);
+    function makeModel(power) {
+      // At fixed positive product, the prior is largest at w₁ = w₂.
+      // The maximizing product is max(0, y − σ²/λ), or zero for the prior.
+      const modalProduct = power === 0 ? 0 : Math.max(0, observation - noiseVariance / power);
+      const logPeak = -modalProduct - power * (observation - modalProduct) ** 2 / (2 * noiseVariance);
+      function density(w1, w2) {
+        const logPrior = -0.5 * (w1 ** 2 + w2 ** 2);
+        const logLikelihood = -((observation - w1 * w2) ** 2) / (2 * noiseVariance);
+        return Math.exp(logPrior + power * logLikelihood - logPeak);
       }
-    }
-    // The z axis is rescaled for display. Contour levels use the original density.
-    const zScale = 3.2 / peak;
-    vertices.forEach(vertex => { vertex.z = vertex.value * zScale; });
-    for (let j = 0; j < ny; j++) {
-      for (let i = 0; i < nx; i++) {
-        const a = j * (nx + 1) + i;
-        const corners = [a, a + 1, a + nx + 2, a + nx + 1];
-        const height = corners.reduce((sum, k) => sum + vertices[k].value / peak, 0) / 4;
-        const dx = (vertices[a + 1].z - vertices[a].z) / (2 * xMax / nx);
-        const dy = (vertices[a + nx + 1].z - vertices[a].z) / (2 * yMax / ny);
-        const light = clamp((0.54 * dx - 0.39 * dy + 0.75) / Math.hypot(1, dx, dy), 0, 1);
-        const shade = Math.round(8 + 30 * light + 11 * height);
-        const opacity = clamp((height - 0.006) * 7.7, 0, 1);
-        const strength = Math.sqrt(height);
-        const red = Math.round(42 + 100 * strength + 40 * light);
-        const green = Math.round(163 + 68 * strength + 23 * light);
-        const blue = Math.round(140 + 68 * strength + 27 * light);
-        const alpha = clamp((0.32 + strength * 0.54 + light * 0.21) * height / (0.018 + height), 0, 1);
-        const shadow = Math.round((1 - light) * strength * 47);
-        const greenInk = Math.round(83 + 35 * light - 14 * strength);
-        faces.push({
-          corners, height,
-          x: (vertices[a].x + vertices[a + 1].x) / 2,
-          y: (vertices[a].y + vertices[a + nx + 1].y) / 2,
-          fill: 'rgba(' + Math.round(shade * 0.4) + ',' + (shade + 17) + ',' + (shade + 10) + ',' + opacity + ')',
-          stroke: 'rgba(' + red + ',' + green + ',' + blue + ',' + alpha + ')',
-          lightFill: 'rgba(' + (218 - shadow) + ',' + (238 - Math.round(shadow * 0.67)) + ',' + (225 - Math.round(shadow * 0.78)) + ',' + opacity + ')',
-          lightStroke: 'rgba(16,' + greenInk + ',' + (greenInk - 19) + ',' + alpha + ')',
-        });
-      }
-    }
-
-    function isoline(level) {
-      const segments = [];
-      for (const { corners, x, y } of faces) {
-        const edges = [];
-        for (let i = 0; i < 4; i++) {
-          const a = vertices[corners[i]];
-          const b = vertices[corners[(i + 1) % 4]];
-          if ((a.value < level) === (b.value < level)) continue;
-          const fraction = (level - a.value) / (b.value - a.value);
-          edges.push([a.x + fraction * (b.x - a.x), a.y + fraction * (b.y - a.y)]);
+      const vertices = [];
+      const faces = [];
+      for (let j = 0; j <= ny; j++) {
+        for (let i = 0; i <= nx; i++) {
+          const x = xMax * (2 * i / nx - 1);
+          const y = yMax * (2 * j / ny - 1);
+          const value = density(x, y);
+          vertices.push({ x, y, value });
         }
-        if (edges.length === 4 && (density(x, y) >= level) !== (vertices[corners[0]].value >= level)) {
-          edges.push(edges.shift());
-        }
-        for (let i = 0; i + 1 < edges.length; i += 2) segments.push([edges[i], edges[i + 1]]);
       }
-      return { level, segments };
-    }
-    const isolines = [0.003, 0.007, 0.014, 0.024, 0.036, 0.05, 0.066, 0.084, 0.103, 0.123, 0.141, 0.151]
-      .filter(level => level < peak).map(isoline);
+      vertices.forEach(vertex => { vertex.z = vertex.value * surfaceHeight; });
+      for (let j = 0; j < ny; j++) {
+        for (let i = 0; i < nx; i++) {
+          const a = j * (nx + 1) + i;
+          const corners = [a, a + 1, a + nx + 2, a + nx + 1];
+          const height = corners.reduce((sum, k) => sum + vertices[k].value, 0) / 4;
+          const dx = (vertices[a + 1].z - vertices[a].z) / (2 * xMax / nx);
+          const dy = (vertices[a + nx + 1].z - vertices[a].z) / (2 * yMax / ny);
+          const light = clamp((0.54 * dx - 0.39 * dy + 0.75) / Math.hypot(1, dx, dy), 0, 1);
+          const shade = Math.round(8 + 30 * light + 11 * height);
+          const opacity = clamp((height - 0.006) * 7.7, 0, 1);
+          const strength = Math.sqrt(height);
+          const red = Math.round(42 + 100 * strength + 40 * light);
+          const green = Math.round(163 + 68 * strength + 23 * light);
+          const blue = Math.round(140 + 68 * strength + 27 * light);
+          const alpha = clamp((0.32 + strength * 0.54 + light * 0.21) * height / (0.018 + height), 0, 1);
+          const shadow = Math.round((1 - light) * strength * 47);
+          const greenInk = Math.round(83 + 35 * light - 14 * strength);
+          faces.push({
+            corners, height,
+            x: (vertices[a].x + vertices[a + 1].x) / 2,
+            y: (vertices[a].y + vertices[a + nx + 1].y) / 2,
+            fill: 'rgba(' + Math.round(shade * 0.4) + ',' + (shade + 17) + ',' + (shade + 10) + ',' + opacity + ')',
+            stroke: 'rgba(' + red + ',' + green + ',' + blue + ',' + alpha + ')',
+            lightFill: 'rgba(' + (218 - shadow) + ',' + (238 - Math.round(shadow * 0.67)) + ',' + (225 - Math.round(shadow * 0.78)) + ',' + opacity + ')',
+            lightStroke: 'rgba(16,' + greenInk + ',' + (greenInk - 19) + ',' + alpha + ')',
+          });
+        }
+      }
 
-    const surfaceFaces = faces.filter(face => face.height >= 0.006);
+      function isoline(level) {
+        const segments = [];
+        for (const { corners, x, y } of faces) {
+          const edges = [];
+          for (let i = 0; i < 4; i++) {
+            const a = vertices[corners[i]];
+            const b = vertices[corners[(i + 1) % 4]];
+            if ((a.value < level) === (b.value < level)) continue;
+            const fraction = (level - a.value) / (b.value - a.value);
+            edges.push([a.x + fraction * (b.x - a.x), a.y + fraction * (b.y - a.y)]);
+          }
+          if (edges.length === 4 && (density(x, y) >= level) !== (vertices[corners[0]].value >= level)) {
+            edges.push(edges.shift());
+          }
+          for (let i = 0; i + 1 < edges.length; i += 2) segments.push([edges[i], edges[i + 1]]);
+        }
+        return { level, segments };
+      }
+      const isolines = [0.015, 0.035, 0.065, 0.10, 0.15, 0.22, 0.32, 0.44, 0.57, 0.70, 0.83, 0.94].map(isoline);
+      return { vertices, isolines, surfaceFaces: faces.filter(face => face.height >= 0.006) };
+    }
+    let model, selectedPower;
     let lastSortedYaw;
-    const initialYaw = 0.42;
+    const initialYaw = -0.48;
     const initialPitch = 0.45;
     let yaw = initialYaw, pitch = initialPitch;
     let mode = 'surface', drag = null, focusFrame = 0, renderFrame = 0;
     let width = 0, height = 0;
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const controls = [...document.querySelectorAll('[data-density-mode]')];
+    const powerControls = [...document.querySelectorAll('[data-likelihood-power]')];
+    const stateLabel = document.getElementById('density-state');
     const mono = 'ui-monospace, SFMono-Regular, Consolas, monospace';
 
     function line(a, b, color, weight = 1) {
@@ -133,7 +130,7 @@
     }
 
     function drawContours(project, flat) {
-      for (const { level, segments } of isolines) {
+      for (const { level, segments } of model.isolines) {
         context.beginPath();
         for (const [a, b] of segments) {
           const p = project(a[0], a[1], 0);
@@ -141,7 +138,7 @@
           context.moveTo(p.x, p.y);
           context.lineTo(q.x, q.y);
         }
-        const t = Math.sqrt(level / peak);
+        const t = Math.sqrt(level);
         context.strokeStyle = flat ? palette.mapContour(t) : palette.floorContour(t);
         context.lineWidth = flat ? 1.2 + t * 0.3 : 0.78;
         context.stroke();
@@ -153,25 +150,23 @@
       const cp = Math.cos(pitch), sp = Math.sin(pitch);
       const raw = (x, y, z) => ({ x: c * x - s * y, y: (s * x + c * y) * sp - cp * z });
       const corners = [[-xMax, -yMax], [xMax, -yMax], [xMax, yMax], [-xMax, yMax]];
-      const edge = corners.map(p => raw(...p, 0));
-      let top = Infinity;
-      const projected = vertices.map(v => {
-        const coord = raw(v.x, v.y, v.z + 0.13);
-        top = Math.min(top, coord.y);
-        return coord;
-      });
-      const left = Math.min(...edge.map(p => p.x));
-      const right = Math.max(...edge.map(p => p.x));
-      const bottom = Math.max(...edge.map(p => p.y)) + 0.15;
+      // Orbit about the ground origin. Stable horizontal scale keeps foreground
+      // points moving with a horizontal drag, even as the bounding box rotates.
+      const radius = Math.hypot(xMax, yMax);
       const sideMargin = width < 410 ? 11 : 20;
       const verticalMargin = height < 245 ? 9 : 16;
-      const scaleX = Math.min((width - sideMargin * 2) / (right - left), 1.15 * (height - verticalMargin * 2) / (bottom - top));
-      const scaleY = Math.min((height - verticalMargin * 2) / (bottom - top), 1.18 * scaleX);
-      const ox = (width - (left + right) * scaleX) / 2;
-      const oy = (height - (top + bottom) * scaleY) / 2;
-      const place = p => ({ x: ox + scaleX * p.x, y: oy + scaleY * p.y });
-      const project = (x, y, z) => place(raw(x, y, z));
-      projected.forEach(p => { p.x = ox + scaleX * p.x; p.y = oy + scaleY * p.y; });
+      const ox = width / 2, oy = height * 0.635;
+      const scaleX = Math.min((width - sideMargin * 2) / (2 * radius), height * 0.22);
+      const scaleY = Math.min(
+        (oy - verticalMargin) / ((surfaceHeight + 0.13) * cp + 1.85 * sp),
+        (height - oy - verticalMargin) / (radius * sp),
+        scaleX * 1.23,
+      );
+      const project = (x, y, z) => {
+        const p = raw(x, y, z);
+        return { x: ox + scaleX * p.x, y: oy + scaleY * p.y };
+      };
+      const projected = model.vertices.map(v => project(v.x, v.y, v.z + 0.13));
 
       // Fine guide lines and the four-sided base frame sit below the density mesh.
       const frame = corners.map(p => project(...p, 0));
@@ -186,20 +181,20 @@
       for (let x = -3; x <= 3; x += 0.5) {
         line(project(x, -yMax, 0), project(x, yMax, 0), palette.grid, 0.65);
       }
-      for (let y = -2.5; y <= 2.5; y += 0.5) {
+      for (let y = -3; y <= 3; y += 0.5) {
         line(project(-xMax, y, 0), project(xMax, y, 0), palette.grid, 0.65);
       }
       drawContours(project, false);
 
       // Depth-sort cells so that both peaks occlude the grid behind them.
       if (lastSortedYaw !== yaw) {
-        surfaceFaces.sort((a, b) => (a.x - b.x) * s + (a.y - b.y) * c);
+        model.surfaceFaces.sort((a, b) => (a.x - b.x) * s + (a.y - b.y) * c);
         lastSortedYaw = yaw;
       }
       context.lineJoin = 'round';
       context.lineWidth = width < 430 ? 0.73 : 0.94;
       const lowerX = s >= 0, lowerY = c >= 0;
-      for (const face of surfaceFaces) {
+      for (const face of model.surfaceFaces) {
         const a = projected[face.corners[0]], b = projected[face.corners[1]];
         const d = projected[face.corners[2]], e = projected[face.corners[3]];
         context.beginPath();
@@ -234,8 +229,8 @@
       }
       const p1 = project(-frontX, frontY, 0);
       const p2 = project(frontX, -frontY, 0);
-      label('x₁', { x: clamp(p1.x, 12, width - 12), y: p1.y + 13 }, 'center', 0.80);
-      label('x₂', { x: clamp(p2.x, 12, width - 12), y: p2.y + 13 }, 'center', 0.80);
+      label('w₁', { x: clamp(p1.x, 12, width - 12), y: p1.y + 13 }, 'center', 0.80);
+      label('w₂', { x: clamp(p2.x, 12, width - 12), y: p2.y + 13 }, 'center', 0.80);
     }
 
     function drawMap() {
@@ -245,13 +240,13 @@
         line(project(x, -yMax), project(x, yMax), palette.mapGrid, 0.65);
         if (Number.isInteger(x) && x % 2 === 0) label(String(x).replace('-', '−'), project(x, -yMax - 0.15), 'center');
       }
-      for (let y = -2.5; y <= 2.5; y += 0.5) {
+      for (let y = -3; y <= 3; y += 0.5) {
         line(project(-xMax, y), project(xMax, y), palette.mapGrid, 0.65);
         if (Number.isInteger(y) && y % 2 === 0) label(String(y).replace('-', '−'), project(-xMax - 0.10, y - 0.06), 'right');
       }
       drawContours(project, true);
-      label('x₁', project(xMax, -yMax - 0.15), 'right', 0.8);
-      label('x₂', project(-xMax - 0.10, yMax - 0.1), 'right', 0.8);
+      label('w₁', project(xMax, -yMax - 0.15), 'right', 0.8);
+      label('w₂', project(-xMax - 0.10, yMax - 0.1), 'right', 0.8);
     }
 
     function draw() {
@@ -272,10 +267,27 @@
       context.clearRect(0, 0, width, height);
       if (mode === 'surface') drawSurface();
       else drawMap();
+      canvas.dataset.painted = 'true';
     }
     function scheduleDraw() {
       if (!renderFrame) renderFrame = requestAnimationFrame(draw);
     }
+
+    function selectPower(power) {
+      if (power === selectedPower || !likelihoodStates.has(power)) return;
+      model = makeModel(power);
+      selectedPower = power;
+      lastSortedYaw = undefined;
+      canvas.dataset.likelihoodPower = String(power);
+      powerControls.forEach(button => {
+        const active = Number(button.dataset.likelihoodPower) === power;
+        button.setAttribute('aria-pressed', String(active));
+        button.classList.toggle('is-active', active);
+      });
+      if (stateLabel) stateLabel.textContent = likelihoodStates.get(power);
+      scheduleDraw();
+    }
+    powerControls.forEach(button => button.addEventListener('click', () => selectPower(Number(button.dataset.likelihoodPower))));
 
     function selectMode(next) {
       mode = next === 'contours' ? 'contours' : 'surface';
@@ -286,6 +298,8 @@
         button.classList.toggle('is-active', active);
       });
       canvas.style.cursor = mode === 'surface' ? 'grab' : 'default';
+      // Capture a one-finger orbit on the figure; pinch zoom and page scrolling outside it remain native.
+      canvas.style.touchAction = mode === 'surface' ? 'pinch-zoom' : 'auto';
       scheduleDraw();
     }
     controls.forEach(button => button.addEventListener('click', () => selectMode(button.dataset.densityMode)));
@@ -303,7 +317,6 @@
       }
       animate(start);
     }
-    canvas.style.touchAction = 'pan-y';
     canvas.addEventListener('pointerdown', event => {
       if (mode !== 'surface' || event.button !== 0 || drag) return;
       cancelAnimationFrame(focusFrame);
@@ -313,11 +326,12 @@
     });
     canvas.addEventListener('pointermove', event => {
       if (!drag || drag.id !== event.pointerId) return;
-      yaw = drag.yaw + (event.clientX - drag.x) * 4.5 / Math.max(width, 300);
+      yaw = drag.yaw - (event.clientX - drag.x) * 4.5 / Math.max(width, 300);
       pitch = clamp(drag.pitch + (event.clientY - drag.y) * 1.75 / Math.max(height, 240), 0.18, 0.98);
       scheduleDraw();
     });
-    function endDrag() {
+    function endDrag(event) {
+      if (!drag || event.pointerId !== drag.id) return;
       drag = null;
       canvas.style.cursor = mode === 'surface' ? 'grab' : 'default';
     }
@@ -332,7 +346,7 @@
         reset();
         return;
       }
-      const keys = { ArrowLeft: [-0.12, 0], ArrowRight: [0.12, 0], ArrowUp: [0, 0.08], ArrowDown: [0, -0.08] };
+      const keys = { ArrowLeft: [0.12, 0], ArrowRight: [-0.12, 0], ArrowUp: [0, -0.08], ArrowDown: [0, 0.08] };
       const change = keys[event.key];
       if (!change) return;
       event.preventDefault();
@@ -345,6 +359,7 @@
     if ('ResizeObserver' in window) new ResizeObserver(scheduleDraw).observe(canvas);
     window.addEventListener('resize', scheduleDraw, { passive: true });
     window.addEventListener('site-theme-change', scheduleDraw);
+    selectPower(1);
     selectMode('surface');
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, { once: true });
